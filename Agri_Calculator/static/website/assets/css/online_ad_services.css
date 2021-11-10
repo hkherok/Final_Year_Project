@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+
+.img{
+    width: 80%;
+}
+h2{
+    font-weight: bold;
+    font-family: "Josefin Sans", Sans-serif, sans-serif;
+    color: black;
+
+}
+
+h1{
+    font-family: 'Red Hat Display', sans-serif !important;
+    color: black;
+}
+
+.head{
+    font-family: 'Red Hat Display', sans-serif !important;
+    color: black !important;
+    font-weight: bold;
+}
+p{
+    font-family: "Josefin Sans", Sans-serif, sans-serif;
+}
+button{
+    font-family: "Josefin Sans", Sans-serif, sans-serif;
+
+}

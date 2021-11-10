@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+
+
+.contain {
+    position: relative;
+    background-color: #333;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #ffff;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+.content{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.heading{
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+}
+
+.paragraph{
+    font-family: "Josefin Sans", Sans-serif, sans-serif;
+    padding-top: 200px;
+
+    font-weight: 700;
+    text-align: justify;
+}
+
+
+.margin{
+    margin-bottom: 200px;
+}
+.text{
+    font-size: 15px;
+    line-height: 15px;
+}
+
+
+
+.details{
+    margin-top: 50px ;
+    margin-bottom: 50px;
+}

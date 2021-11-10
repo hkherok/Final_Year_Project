@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+body{
+    background-color: #f5f5f5;
+}
+a{
+    transition: .3s;
+}
+/*pricinng-arrea*/
+
+
+.product-img{
+    position: relative;
+}
+.cart-btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.theme-btn{
+    display: block;
+    padding: 10px 20px;
+    background: #fe4c1c;
+    color: #fff;
+    border-radius: 40px;
+    position: relative;
+    padding-right: 50px;
+    width: 180px;
+}
+.theme-btn:hover{
+    background: #c73b15;
+    color: #fff;
+}
+.theme-btn i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    border:1px solid #ebebeb;
+    text-align: center;
+}
+
+.product-item:hover .cart-btn{
+    opacity: 1;
+    visibility: visible;
+}
+.product-item{
+    box-shadow: 0 5px 14.25px 0.75px rgba(12,105,184,.1);
+    margin-bottom: 30px;
+
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+
+.product-content h2{
+    font-size: 20px;
+    line-height: 28px;
+    color: #1a1b1e;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.product-content h2 a{
+    color: #333;
+}
+.product-content h2 a:hover{
+    color: #fe4c1c;
+}
+.product-content ul{
+    display: flex;
+    justify-content: center;
+}
+.product-content ul li{
+    color: #fe4c1c;
+    margin-right: 15px;
+}
+.product-content ul li:last-child{
+    margin-right: 0;
+}
+.product-content ul li del{
+ color: #636363;
+}
+.product-content{
+    text-align: center;
+    padding: 0 15px 15px 15px;
+    min-height: 120px;
+}
+
+.product-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.pro-sorting select{
+    height: 45px;
+    padding: 0 10px;
+    border-radius: 40px;
+    line-height: 45px;
+}
+.pro-sorting select:focus{
+    outline: none;
+}
+
+/*pagination-style*/
+
+.pagination-wrapper {
+    margin-top: 40px;
+}
+
+.pagination-wrapper ul {
+    text-Align: center;
+}
+
+.pagination-wrapper ul li {
+    display: inline-block;
+}
+
+.pagination-wrapper ul li a,
+.pagination-wrapper ul li span {
+    display: block;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ddd;
+    text-Align: center;
+    line-height: 40px;
+    color: #223;
+}
+
+.pagination-wrapper ul li span,
+.pagination-wrapper ul li a:hover,
+.pagination-wrapper ul li span:hover {
+    background-color: #fe4c1c;
+    color: #fff;
+}
+
+.pagination-wrapper .next {
+    display: block;
+    height: 40px;
+    width: 129px;
+    border: 1px solid #ddd;
+    text-Align: center;
+    line-height: 40px;
+    color: #223;
+}

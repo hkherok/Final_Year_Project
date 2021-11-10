@@ -1,0 +1,209 @@
+{% load static %}
+<!doctype html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Agri_Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@423&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!--    title logo-->
+<link rel="shortcut icon" type="image/png" href="{% static 'website/assets/images/logo/icon.png' %}">
+
+<!--    link All style Sheet -->
+<!--    link BootStrap style Sheet -->
+    <link rel="stylesheet" href="{% static 'website/assets/css/bootstrap.min.css' %}">
+<!--    end BootStrap style sheet-->
+    <!--   link external css-->
+
+    <link href="{% static 'website/assets/css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'website/assets/css/owl.carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'website/assets/css/odometer-theme-default.css' %}" rel="stylesheet">
+    <link href="{% static 'website/assets/css/slick.css' %}" rel="stylesheet">
+    <link href="{% static 'website/assets/css/slick-theme.css' %}" rel="stylesheet">
+    <link href="{% static 'website/assets/css/slicknav.min.css' %}" rel="stylesheet">
+    <link href="{% static 'website/assets/css/jquery.fancybox.css'%}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--    &lt;!&ndash;[if lt IE 9]>-->
+<!--    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>-->
+<!--    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+<!--    <![endif]&ndash;&gt;-->
+
+
+<!--    <link rel="stylesheet" href="css/_type.scss">-->
+    <link rel="stylesheet" href="{% static 'website/assets/css/footer.css'%}">
+    <link rel="stylesheet" href="{% static 'website/assets/css/media-queries.css'%}">
+    <link rel="stylesheet" href="{% static 'website/assets/css/animate.css'%}">
+    <link rel="stylesheet" href="{% static 'website/assets/css/animation.css'%}">
+    <link rel="stylesheet" href="{% static 'website/assets/css/all.css'%}">
+    <link rel="stylesheet" href="{% static 'website/assets/css/our_team.css'%}">
+<!--    link responsive stylesheet-->
+    <link href="{% static 'website/assets/css/style.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'website/assets/css/style2.css' %}">
+    <link href="{% static 'website/assets/css/responsive.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+
+
+<!--    end Main style sheet -->
+
+</head>
+<body>
+<!-- start page-loader -->
+<div class="page-loader">
+    <div class="page-loader-inner">
+        <div class="inner"></div>
+    </div>
+</div>
+<!-- end page-loader -->
+<!-- header-area start -->
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-12 col-lg-6">
+                    <ul class="d-flex account_login-area">
+
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-6">
+
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+
+                            <ul class="login-r">
+                                <li data-toggle="modal" data-target=""><a href="{% url 'signin' %}">Sign in</a></li>
+                                <li data-toggle="modal"  data-target="#sign_up"><a href="{% url 'signup' %}">Sign up</a></li>
+                            </ul>
+
+
+
+                        </div>
+
+
+
+
+{#                    ........................................................................................................................................... profile end ..................................................................................................................................................................#}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-area"  id="sticky-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-9 col-sm-9 col-9">
+                    <div class="logo">
+                        <a href="{% url 'dashbord' %}"><img src="{% static 'agronomy.png'%}" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 d-none d-lg-block">
+                    <div class="main-menu">
+                        <nav class="nav_mobile_menu">
+                            <ul>
+                                <li><a href="{% url 'blog' %}">Blog</a>
+                                </li>
+                                <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+                                <li><a href="{% url 'message' %}">Message</a>
+                                </li>
+                                <li><a href={% url 'website' %}>Website</a>
+                                </li>
+                                <li><a href="{% url 'total_service' %}"> Total service</a></li>
+                                <li><a href="{% url 'register' %}">Register Member</a></li>
+                                 <li ><a href="{% url 'attion' %}">Attention</a></li>
+                                <li><a href="{% url 'problem' %}"><h5>Problem</h5></a></li>
+
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-12 d-block d-lg-none">
+                    <div class="mobile_menu"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header-area end -->
+
+
+<div class="container ">
+
+            <div class="row pt-5">
+                <div class="wow animate__fadeInLeft col-md-6">
+                </div>
+                <div class="wow animate__fadeInRight col-md-6 ">
+
+                     <img src="{% static '৬.  ধানে দস্তা সারের ঘাটতি.jpg' %}" class="img-fluid" alt="">
+
+                </div>
+            </div>
+</div>
+
+
+</body>
+</html>
+
+<div class="container">
+ <br>
+                   <p>
+                       ১. রাসায়নিক বালাইনাশক পরিবেশ ও জনস্বাস্থ্যের জন্য মারাত্বক হুমকি। তাই বিশেষজ্ঞের সুনির্দিষ্ট পরামর্শ ছাড়া এটি ব্যবহার করবেন না। ফসলের বালাই ব্যবস্থাপনায় পরিবেশবান্ধব ( অরাসায়নিক ) পদ্ধতিসমূহকে বিশেষ গুরুত্ব দিন।
+                   </p>
+
+    <p>২. রাসায়নিক বালাইনাশক ব্যবহারের পূর্বে জেনে নিন, তা প্রয়োগ করলে ফসলের উপকারি পোকা-মাকড়ের খুব বেশি ক্ষতি হবে কিনা। </p>
+    <p>৩. বালাইনাশক ব্যবহারের পূর্বে এর বোতল/ কনটেইনারের গায়ে লেখা তথ্যসমূহ অবশ্যই মনোযোগ দিয়ে পড়ে নিন। </p>
+    <p>৪. বালাইনাশক ব্যবহারের পূর্বে নিরাপত্তামূলক ব্যবস্থা যেমন: চোখে চশমা, হাতে গ্লোবস, মাথায় ক্যাপ বা হেলমেট ইত্যাদি পড়ে নিন। </p>
+    <P>৫. বাতাসের প্রতিকুলে (বাতাস যে দিকে যায় তার বিপরীতে) বালাইনাশক স্প্রে করবেন না। </P>
+    <p>৬. তীব্র বায়ু প্রবাহের সময় বালাইনাশক স্প্রে করবেন না। </p>
+    <P>৭. বালাইনাশক স্প্রে করার সময় কোন কিছু খাওয়া বা পান করা থেকে বিরত থাকুন। </P>
+    <p>৮. বালাইনাশক প্রয়োগকালে বিষক্রিয়ায় আক্রান্ত হলে দ্রুত ডাক্তারের পরামর্শ নিন। </p>
+    <P>৯. বালাইনাশক স্প্রে করা ক্ষেত সাইন বোর্ড বা লাল ফ্লাগ দিয়ে চিহ্নিত করুন। </P>
+    <p>১০. অব্যবহৃত বালাইনাশক তার কনটেইনারেই নিরাপদভাবে সংরক্ষণ করুন এবং প্রয়োজনে মেয়াদ উত্তীর্ণের আগেই তা ব্যবহার করুন। </p>
+    <p>    ধানে দস্তা সারের ঘাটতি
+লক্ষণ:
+১. ধান গাছ মাঝে মাঝে খাটো হয় বা বসে যায় ।
+২. পুরোনো পাতা মরচে পড়া বাদামি বা কমলা রং ধারণ করে এবং কখনও কখনও কচি পাতা সাদাটে হয়ে যায় ।
+৩. কুশি কম হয় ।
+
+ব্যবস্থাপনা:
+১. লক্ষণ দেখা গেলে জমির পানি সরিয়ে দিতে হবে এবং বিঘা প্রতি ১.৫ কেজি দস্তা সার উপরি প্রয়োগ করতে হবে।
+২. অথবা জিঙ্ক সালফেট ০.৫% হারে অর্থাৎ প্রতি লিটারে ৫ গ্রাম হারে জিঙ্ক সালফেট পানিতে মিশিয়ে স্প্রে করতে হবে।
+
+কৃষকের আচরণগত পরিবর্তন যোগাযোগ (এফবিসিসি)
+পরবর্তীতে যা যা করবেন
+১. জমি তৈরীর সময় জমি ভালভাবে সমান করুন।
+২. মাটি পরীক্ষা করে জমিতে সুষম সার প্রয়োগ করুন।
+৩. মাটিতে জৈব সার প্রয়োগ করুন।
+</p>
+
+                </div>
+
+
+
+
+
+<script src="{% static 'website/assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'website/assets/js/popper.min.js' %}"></script>
+<script src="{% static 'website/assets/js/bootstrap.min.js' %}"></script>
+<!-- Plugins for this template -->
+<script src="{% static 'website/assets/js/jquery-plugin-collection.js' %}"></script>
+<script src="{% static 'website/assets/js/jquery.slicknav.min.js' %}"></script>
+<script src="{% static 'website/assets/js/jquery.zoom.min.js' %}"></script>
+<!-- Custom script for this template -->
+<script src="{% static 'website/assets/js/main.js' %}"></script>
+<script src="{% static 'website/assets/js/scripts.js' %}"></script>
+<script>
+    new WOW().init();
+</script>
+
+</body>
+</html>
+

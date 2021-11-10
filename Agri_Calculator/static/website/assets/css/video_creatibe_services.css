@@ -1,0 +1,11 @@
+.content{
+    padding: 160px 20px 160px 20px ;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+.content h2{
+    font-weight: bold;
+}
+.content p{
+ color: #4A4F55;
+}

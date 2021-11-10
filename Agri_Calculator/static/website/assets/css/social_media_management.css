@@ -1,0 +1,18 @@
+
+.article-part{
+    padding: 60px 20px 60px 20px;
+}
+/*.article-part*/
+.section h1{
+    font-weight: 700;
+}
+
+.section p{
+    padding-top: 50px;
+    font-family: "Josefin Sans", Sans-serif, sans-serif;
+    color: #4A4F55;
+    padding-bottom: 50px;
+}
+.section img{
+    height: 500px;
+}

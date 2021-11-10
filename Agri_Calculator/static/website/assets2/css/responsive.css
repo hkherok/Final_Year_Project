@@ -1,0 +1,116 @@
+/*-------------- Start device screen 1920 --------------*/
+@media screen and (max-width: 1920px) {
+	.content-wrapper {
+	    min-height: 543px;
+	}
+}
+/*-------------- Start device screen 1440 --------------*/
+
+@media screen and (max-width: 1440px) {
+	.content-wrapper {
+	    min-height: 313px;
+	}
+}
+/*-------------- Start device screen 1366 --------------*/
+
+@media screen and (max-width: 1366px) {
+	.content-wrapper {
+	    min-height: 341px;
+	}
+}
+
+/*-------------- Start device screen 1024 --------------*/
+
+@media screen and (max-width: 1024px) {
+	.sidebar {
+	    left: -320px;
+	    top: 0;
+	}
+	.content-wrapper {
+	    padding-left: 0;
+	}
+	footer {
+	    margin-left: 0;
+	}
+	._toggle .sidebar {
+	    left: 0;
+	    z-index: 99999;
+	}
+	.sidebar .menu-close{
+		display: flex;
+	}
+
+
+}
+
+/*-------------- Start device screen 991 --------------*/
+
+@media screen and (max-width: 991px) {
+	
+	.top-brand .brands a img {
+	    width: 93.2px;
+	}
+	div#trafic {
+	    margin: auto;
+	}
+}
+
+/*-------------- Start device screen 768 --------------*/
+
+@media screen and (max-width: 768px) {
+	.top-brand .brands a img {
+	    width: 90.1px;
+	}
+}
+
+/*-------------- Start device screen 425 --------------*/
+
+@media screen and (max-width: 425px) {
+	.card{
+		padding: 15px;
+	}
+	.top-bar header .top-header ul li .dropdown .btn {
+	    font-size: 14px;
+	    color: #a7a7a7;
+	}
+	.top-bar header .bottom-header .search {
+	    margin: 15px 0;
+	}
+	.top-bar header .bottom-header ul {
+	    justify-content: center;
+	}
+	.menu-toggler {
+	    top: -35px;
+	    transform: translateY(0);
+	    left: 90%;
+	}
+	.content-wrapper {
+	    margin-top: 300px;
+	}
+	.top-brand .brands a img {
+	    width: 103.8px;
+	}
+	.sidebar {
+	    width: 280px !important;
+	}
+	.submit-btn {
+	    width: 100%;
+	}
+}
+
+/*-------------- Start device screen 375 --------------*/
+
+@media screen and (max-width: 375px) {
+	.top-brand .brands a img {
+	    width: 87.1px;
+	}
+
+}
+
+/*-------------- Start device screen 320 --------------*/
+
+@media screen and (max-width: 320px) {
+	.top-brand .brands a img {
+	    width: 68.8px;
+	}
+}
