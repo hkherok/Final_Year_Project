@@ -89,7 +89,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a class="getstarted scrollto" href="#about">
+                <a class="nav-link  scrollto" href="#about">
                   <Link to="/signin">Signin</Link>
                 </a>
               </li>
