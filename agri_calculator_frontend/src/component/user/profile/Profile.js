@@ -91,12 +91,15 @@ function Profile() {
                       </div>
                       <br />
                       <br />
+                      <br />
+                      <br></br>
                     </div>
 
                     <div class="form-group">
                       <label class="col-md-2 col-sm-3 col-xs-12 control-label">
                         User Name
                       </label>
+
                       <div class="col-md-10 col-sm-9 col-xs-12">
                         <input
                           type="text"

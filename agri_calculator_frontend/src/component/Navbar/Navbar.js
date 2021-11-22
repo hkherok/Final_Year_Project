@@ -8,7 +8,7 @@ const Navbar = () => {
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
           <a href="index.html" class="logo d-flex align-items-center">
             <img src="assets/img/logo.png" alt="" />
-            <span>FlexStart</span>
+            <span>Agri </span>
           </a>
 
           <nav id="navbar" class="navbar">
@@ -34,12 +34,10 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a class="nav-link scrollto" href="#team">
-                  Team
-                </a>
+                <Link to="/desease">Desease</Link>
               </li>
               <li>
-                <a href="blog.html">Blog</a>
+                <Link to="/blog">Blog</Link>
               </li>
               <li class="dropdown">
                 <a href="#">
@@ -84,14 +82,10 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <a class="nav-link scrollto" href="#contact">
-                  <Link to="/profile">Profile</Link>
-                </a>
+                <Link to="/profile">Profile</Link>
               </li>
               <li>
-                <a class="nav-link  scrollto" href="#about">
-                  <Link to="/signin">Signin</Link>
-                </a>
+                <Link to="/signin">Signin</Link>
               </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
