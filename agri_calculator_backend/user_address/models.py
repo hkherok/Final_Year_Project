@@ -37,9 +37,9 @@ class Address(models.Model):
     street = models.CharField(max_length=30, blank=True, default='')
     post_office = models.CharField(max_length=30, blank=True, default='')
     postal_code = models.CharField(max_length=30, blank=True, default='')
-    upazila = models.OneToOneField(to=Upazila, on_delete=models.CASCADE, parent_link=False)
-    district = models.OneToOneField(to=District, on_delete=models.CASCADE, parent_link=False)
-    division = models.OneToOneField(to=Division, on_delete=models.CASCADE, parent_link=False)
+    upazila = models.CharField(max_length=30, blank=True, default='')
+    district = models.CharField(max_length=30, blank=True, default='')
+    division = models.CharField(max_length=30, blank=True, default='')
 
     def __str__(self):
         return "%s the address" % self.postal_code
