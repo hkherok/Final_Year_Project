@@ -6,6 +6,7 @@ import Profile from "./component/user/profile/Profile";
 import Signin from "./component/signin/Signin";
 import Blog from "./component/blog/Blog";
 import Desease from "./component/desease/Desease";
+
 function App() {
   return (
     <div>
