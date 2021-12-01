@@ -44,11 +44,24 @@ function Profile() {
     });
   }, []);
 
+  // delete
+  const getData = (data) => {
+    axios.get(`http://127.0.0.1:8000/user/profile/`).then((getData) => {
+      setAPIData(getData.data);
+    });
+  };
+
+  const onDelete = (id) => {
+    axios.delete(`http://127.0.0.1:8000/user/profile/${id}`).then(() => {
+      getData();
+    });
+  };
+
+  // delete end
+
   return (
     <div>
       <div>
-        <h1>Admin Portal</h1>
-
         {APIData.map((data) => {
           return (
             <div class="container" key={data.id}>
@@ -59,7 +72,7 @@ function Profile() {
                       <div class="user-info">
                         <img
                           class="img-profile img-circle img-responsive center-block"
-                          src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                          src="https://i.ibb.co/P9XSLsL/174285941-1159912024471392-2501495819724767372-n.jpg"
                           alt=""
                         />
                         <ul class="meta list list-unstyled">
@@ -109,10 +122,7 @@ function Profile() {
                       </nav>
                     </div>
                     <div class="content-panel">
-                      <h2 class="title">
-                        Profile
-                        <span class="pro-label label label-warning">PRO</span>
-                      </h2>
+                      <h2 class="title">Profile</h2>
                       <form class="form-horizontal">
                         <fieldset class="fieldset">
                           <h3 class="fieldset-title">Personal Info</h3>
@@ -120,7 +130,7 @@ function Profile() {
                             <figure class="figure col-md-2 col-sm-3 col-xs-12">
                               <img
                                 class="img-rounded img-responsive"
-                                src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                                src={data.photo}
                                 alt=""
                               />
                             </figure>
@@ -196,7 +206,6 @@ function Profile() {
                                 class="form-control"
                                 value={data.nid}
                               />
-                              <p class="help-block">This is the email </p>
                             </div>
                           </div>
 
@@ -210,48 +219,66 @@ function Profile() {
                                 class="form-control"
                                 value={data.birth_reg_no}
                               />
-                              <p class="help-block">This is the email </p>
-                            </div>
-                          </div>
-
-                          <div class="form-group">
-                            <label class="col-md-2  col-sm-3 col-xs-12 control-label">
-                              Twitter
-                            </label>
-                            <div class="col-md-10 col-sm-9 col-xs-12">
-                              <input
-                                type="text"
-                                class="form-control"
-                                value="SpeedyBecky"
-                              />
-                              <p class="help-block">Your twitter username</p>
                             </div>
                           </div>
                           <div class="form-group">
                             <label class="col-md-2  col-sm-3 col-xs-12 control-label">
-                              Linkedin
+                              Date of birth
                             </label>
                             <div class="col-md-10 col-sm-9 col-xs-12">
                               <input
-                                type="url"
+                                type="email"
                                 class="form-control"
-                                value="https://www.linkedin.com/in/lorem"
+                                value={data.date_of_birth}
                               />
-                              <p class="help-block">
-                                eg. https://www.linkedin.com/in/yourname
-                              </p>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-md-2  col-sm-3 col-xs-12 control-label">
+                              Age
+                            </label>
+                            <div class="col-md-10 col-sm-9 col-xs-12">
+                              <input
+                                type="email"
+                                class="form-control"
+                                value={data.age}
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-md-2  col-sm-3 col-xs-12 control-label">
+                              Gender
+                            </label>
+                            <div class="col-md-10 col-sm-9 col-xs-12">
+                              <input
+                                type="email"
+                                class="form-control"
+                                value={data.gender}
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-md-2  col-sm-3 col-xs-12 control-label">
+                              Address
+                            </label>
+                            <div class="col-md-10 col-sm-9 col-xs-12">
+                              <input
+                                type="email"
+                                class="form-control"
+                                value={data.address}
+                              />
                             </div>
                           </div>
                         </fieldset>
                         <hr />
-                        <div class="form-group">
-                          <div class="col-md-10 col-sm-9 col-xs-12 col-md-push-2 col-sm-push-3 col-xs-push-0">
-                            <input
-                              class="btn btn-primary"
-                              type="submit"
-                              value="Update Profile"
-                            />
-                          </div>
+                        <div class="form-group"></div>
+                        <div>
+                          <Button
+                            class="btn btn-primary"
+                            onClick={() => onDelete(data.id)}
+                          >
+                            Reset
+                          </Button>
                         </div>
                       </form>
                     </div>

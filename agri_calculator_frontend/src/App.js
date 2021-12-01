@@ -6,11 +6,13 @@ import Profile from "./component/user/profile/Profile";
 import Signin from "./component/signin/Signin";
 import Blog from "./component/blog/Blog";
 import Desease from "./component/desease/Desease";
+import Topbar from "./component/Topbar/Topbar";
 
 function App() {
   return (
     <div>
       <Router>
+        <Topbar />
         <Navbar />
         <Routes>
           <Route path="/home" exact element={<Home />} />

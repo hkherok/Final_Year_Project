@@ -1,97 +1,36 @@
 import React from "react";
 import "./Topbar.css";
+import { Link } from "react-router-dom";
+
 const Topbar = () => {
   return (
     <div>
-      <div class="top-bar animate-dropdown">
-        <div class="container">
-          <div class="header-top-inner">
-            <div class="cnt-account">
-              <ul class="list-unstyled">
-                <li class="myaccount">
-                  <a href="#">
-                    <span>My Account</span>
-                  </a>
-                </li>
-                <li class="wishlist">
-                  <a href="#">
-                    <span>Wishlist</span>
-                  </a>
-                </li>
-                <li class="header_cart hidden-xs">
-                  <a href="#">
-                    <span>My Cart</span>
-                  </a>
-                </li>
-                <li class="check">
-                  <a href="#">
-                    <span>Checkout</span>
-                  </a>
-                </li>
-                <li class="login">
-                  <a href="#">
-                    <span>Login</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            {/* <!-- /.cnt-account -->
-             */}
-            <div class="cnt-block">
-              <ul class="list-unstyled list-inline">
-                <li class="dropdown dropdown-small">
-                  {" "}
-                  <a
-                    href="#"
-                    class="dropdown-toggle"
-                    data-hover="dropdown"
-                    data-toggle="dropdown"
-                  >
-                    <span class="value">USD </span>
-                    <b class="caret"></b>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">USD</a>
-                    </li>
-                    <li>
-                      <a href="#">INR</a>
-                    </li>
-                    <li>
-                      <a href="#">GBP</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="dropdown dropdown-small lang">
-                  {" "}
-                  <a
-                    href="#"
-                    class="dropdown-toggle"
-                    data-hover="dropdown"
-                    data-toggle="dropdown"
-                  >
-                    <span class="value">English </span>
-                    <b class="caret"></b>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">English</a>
-                    </li>
-                    <li>
-                      <a href="#">French</a>
-                    </li>
-                    <li>
-                      <a href="#">German</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-
-            <div class="clearfix"></div>
+      <section id="topbar" class="d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+          <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-envelope d-flex align-items-center">
+              <a href="mailto:contact@example.com">contact@example.com</a>
+            </i>
+            <i class="bi bi-phone d-flex align-items-center ms-4">
+              <span>+1 5589 55488 55</span>
+            </i>
+          </div>
+          <div class="social-links d-none d-md-flex align-items-center">
+            <a href="#" class="twitter">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="#" class="facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" class="linkedin">
+              <Link to="/signin">Signin or Login</Link>
+            </a>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

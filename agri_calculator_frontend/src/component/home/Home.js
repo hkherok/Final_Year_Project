@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import Search from "../Search/Search";
 function Home() {
   return (
     <div>
@@ -27,6 +28,9 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <Search />
+
       <section id="about" class="about section-bg">
         <div class="container">
           <div class="row">
