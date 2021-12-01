@@ -4,56 +4,76 @@ import Search from "../Search/Search";
 function Home() {
   return (
     <div>
-      <section id="hero">
+      <section id="hero" class="d-flex align-items-center">
         <div class="container">
-          <div class="row d-flex align-items-center">
+          <div class="row">
             <div
-              class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1"
-              data-aos="fade-right"
+              class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
-              <h1>Your new digital experience with Bocor</h1>
+              <h1>Agri Calculator </h1>
               <h2>
-                We are team of talented designers making websites with Bootstrap
+                Agri Calculator or Digital System of Plants Problem
+                Identification (DPPIS) is a digital effort to solve farmers'
+                crop problems quickly and effectively.
               </h2>
-              <a href="#about" class="btn-get-started scrollto">
-                Get Started
-              </a>
+              <div class="d-flex justify-content-center justify-content-lg-start">
+                <a href="#about" class="btn-get-started scrollto">
+                  Get Started
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
+                  class="glightbox btn-watch-video"
+                >
+                  <i class="bi bi-play-circle"></i>
+                  <span>Watch Video</span>
+                </a>
+              </div>
             </div>
             <div
               class="col-lg-6 order-1 order-lg-2 hero-img"
-              data-aos="fade-left"
+              data-aos="zoom-in"
+              data-aos-delay="200"
             >
-              <img src="assets/img/hero-img.png" class="img-fluid" alt="" />
+              <img
+                src="https://i.ibb.co/c6YFsDw/farmer-gdeb9cce0a-1920.jpg"
+                class="img-fluid animated"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <Search />
+      {/* <Search /> */}
 
       <section id="about" class="about section-bg">
         <div class="container">
           <div class="row">
-            <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+            <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start">
+              <img src="https://i.ibb.co/fML66dZ/grain-g9d025b235-1920.jpg" />
+            </div>
             <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
               <div class="content d-flex flex-column justify-content-center">
                 <h3 data-aos="fade-in" data-aos-delay="100">
-                  Voluptatem dignissimos provident quasi
+                  Agricultural advisory services
                 </h3>
                 <p data-aos="fade-in">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Duis aute irure dolor in reprehenderit
+                  Those problems and their solutions have been added. Multiple
+                  pictures of each problem and at least one representative
+                  picture have been added
                 </p>
                 <div class="row">
                   <div class="col-md-6 icon-box" data-aos="fade-up">
                     <i class="bx bx-receipt"></i>
                     <h4>
-                      <a href="#">Corporis voluptates sit</a>
+                      <a href="#">Easily identify his problem.</a>
                     </h4>
                     <p>
-                      Consequuntur sunt aut quasi enim aliquam quae harum
-                      pariatur laboris nisi ut aliquip
+                      In order to help the farmers who are not able to know the
+                      problem of their crop well when they come to take
+                      agricultural advisory services,
                     </p>
                   </div>
                   <div
@@ -63,11 +83,11 @@ function Home() {
                   >
                     <i class="bx bx-cube-alt"></i>
                     <h4>
-                      <a href="#">Ullamco laboris nisi</a>
+                      <a href="#">Solution to the problem</a>
                     </h4>
                     <p>
-                      Excepteur sint occaecat cupidatat non proident, sunt in
-                      culpa qui officia deserunt
+                      Then the farmers are shown the pictures of those who do
+                      not come up with any problem.
                     </p>
                   </div>
                   <div
@@ -77,11 +97,14 @@ function Home() {
                   >
                     <i class="bx bx-images"></i>
                     <h4>
-                      <a href="#">Labore consequatur</a>
+                      <a href="#"> Multiple surveys</a>
                     </h4>
                     <p>
-                      Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
-                      maiores omnis facere
+                      Multiple surveys were conducted to get the views of the
+                      farmers. It shows that 6% of the farmers who have not
+                      availed the service in this way and 100% of the farmers
+                      who have availed the service in this way think that the
+                      method is helpful for them.
                     </p>
                   </div>
                   <div
@@ -91,11 +114,12 @@ function Home() {
                   >
                     <i class="bx bx-shield"></i>
                     <h4>
-                      <a href="#">Beatae veritatis</a>
+                      <a href="#">Encouraging response.</a>
                     </h4>
                     <p>
-                      Expedita veritatis consequuntur nihil tempore laudantium
-                      vitae denat pacta
+                      The Agri Calculator actually helps the farmer to properly
+                      present his problem to the extension worker. Using it, an
+                      advanced farmer can solve his crop problems on his own.
                     </p>
                   </div>
                 </div>
@@ -104,15 +128,16 @@ function Home() {
           </div>
         </div>
       </section>
+
       <section id="services" class="services section-bg">
         <div class="container">
           <div class="section-title">
             <h2 data-aos="fade-in">Services</h2>
             <p data-aos="fade-in">
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              Using the Agri Calculator will benefit both the service recipient
+              and the service provider. The service recipient will get fast and
+              accurate service and the service provider can easily and quickly
+              solve any problem using the Agri Calculator
             </p>
           </div>
 
@@ -123,17 +148,21 @@ function Home() {
             >
               <div class="card">
                 <div class="card-img">
-                  <img src="assets/img/services-1.jpg" alt="..." />
+                  <img
+                    src="https://cdn.pixabay.com/photo/2019/08/09/20/52/old-man-4395870_960_720.jpg"
+                    alt="..."
+                  />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">
-                    <a href="">Temporibus laudantium</a>
+                    <a href="">It is farmer friendly</a>
                   </h5>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
-                    tempor ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat
+                    very picture used in the Agri Calculator is taken from the
+                    field and the picture is used exactly as the farmer sees the
+                    problem in the field. As a result, the farmer can recognize
+                    the problem correctly. (Research has shown that the glitter
+                    and the pictures working in Photoshop confuse the farmers.I
                   </p>
                   <div class="read-more">
                     <a href="#">
@@ -149,17 +178,20 @@ function Home() {
             >
               <div class="card">
                 <div class="card-img">
-                  <img src="assets/img/services-2.jpg" alt="..." />
+                  <img
+                    src="https://cdn.pixabay.com/photo/2017/04/25/19/36/farmer-2260636_960_720.jpg"
+                    alt="..."
+                  />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">
-                    <a href="">Aperiores voluptates</a>
+                    <a href="">Emphasizes environmentally</a>
                   </h5>
                   <p class="card-text">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem doloremque laudantium, totam rem aperiam, eaque
-                    ipsa quae ab illo inventore veritatis et quasi architecto
-                    beatae vitae dicta sunt explicabo
+                    it emphasizes environmentally friendly practices in pest
+                    management and includes Farmer Behavior Change Communication
+                    (FBCC); This will bring about some behavioral changes in the
+                    farmers which will reduce the recurrence.
                   </p>
                   <div class="read-more">
                     <a href="#">
@@ -175,17 +207,19 @@ function Home() {
             >
               <div class="card">
                 <div class="card-img">
-                  <img src="assets/img/services-3.jpg" alt="..." />
+                  <img
+                    src="https://cdn.pixabay.com/photo/2014/07/08/12/40/soil-386749_960_720.jpg"
+                    alt="..."
+                  />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">
-                    <a href="">Veritatis natus nisi</a>
+                    <a href=""> The extension worker</a>
                   </h5>
                   <p class="card-text">
-                    Nemo enim ipsam voluptatem quia voluptas sit aut odit aut
-                    fugit, sed quia magni dolores eos qui ratione voluptatem
-                    sequi nesciunt Neque porro quisquam est, qui dolorem ipsum
-                    quia dolor sit amet
+                    The Agri Calculator actually helps the farmer to properly
+                    present his problem to the extension worker. Using it, an
+                    advanced farmer can solve his crop problems on his own.
                   </p>
                   <div class="read-more">
                     <a href="#">
@@ -201,17 +235,22 @@ function Home() {
             >
               <div class="card">
                 <div class="card-img">
-                  <img src="assets/img/services-4.jpg" alt="..." />
+                  <img
+                    src="https://cdn.pixabay.com/photo/2016/11/14/04/24/buffalo-1822581_960_720.jpg"
+                    alt="..."
+                  />
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">
-                    <a href="">Aliquam veritatis</a>
+                    <a href=""> Communication</a>
                   </h5>
                   <p class="card-text">
-                    Nostrum eum sed et autem dolorum perspiciatis. Magni porro
-                    quisquam laudantium voluptatem. In molestiae earum ab sit
-                    esse voluptatem. Eos ipsam cumque ipsum officiis qui nihil
-                    aut incidunt aut
+                    By using the Agri Calculator, the possible communication
+                    noise between the service recipient and the service provider
+                    can be brought down to the lowest level. The Agri Calculator
+                    actually helps the farmer to properly present his problem to
+                    the extension worker. Using it, an advanced farmer can solve
+                    his crop problems on his own.
                   </p>
                   <div class="read-more">
                     <a href="#">
@@ -240,7 +279,11 @@ function Home() {
 
           <div class="row content">
             <div class="col-md-5" data-aos="fade-right">
-              <img src="assets/img/features-1.svg" class="img-fluid" alt="" />
+              <img
+                src="https://cdn.pixabay.com/photo/2020/07/23/01/09/field-5430070_960_720.jpg"
+                class="img-fluid"
+                alt=""
+              />
             </div>
             <div class="col-md-7 pt-4" data-aos="fade-left">
               <h3>

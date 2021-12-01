@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Topbar = () => {
   return (
     <div>
-      <section id="topbar" class="d-flex align-items-center">
+      {/* <section id="topbar" class="d-flex align-items-center">
         <div class="container d-flex justify-content-center justify-content-md-between">
           <div class="contact-info d-flex align-items-center">
             <i class="bi bi-envelope d-flex align-items-center">
@@ -30,7 +30,7 @@ const Topbar = () => {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

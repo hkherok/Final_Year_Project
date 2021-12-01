@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Topbar from "../Topbar/Topbar";
-import "../style.css";
+import "./Navbar.css";
 const Navbar = () => {
   return (
     <div>
@@ -88,6 +88,11 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="/profile">Profile</Link>
+              </li>
+              <li>
+                <Link className="getstarted scrollto" to="/attention">
+                  Attention
+                </Link>
               </li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>

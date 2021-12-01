@@ -6,13 +6,12 @@ import Profile from "./component/user/profile/Profile";
 import Signin from "./component/signin/Signin";
 import Blog from "./component/blog/Blog";
 import Desease from "./component/desease/Desease";
-import Topbar from "./component/Topbar/Topbar";
+import Attention from "./component/Attention/Attention";
 
 function App() {
   return (
     <div>
       <Router>
-        <Topbar />
         <Navbar />
         <Routes>
           <Route path="/home" exact element={<Home />} />
@@ -20,6 +19,7 @@ function App() {
           <Route path="/signin" exact element={<Signin />} />
           <Route path="/blog" exact element={<Blog />} />
           <Route path="/desease" exact element={<Desease />} />
+          <Route path="/attention" exact element={<Attention />} />
         </Routes>
         <Footer />
       </Router>
