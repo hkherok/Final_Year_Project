@@ -80,7 +80,7 @@ function Signin() {
                   <div class="row mb-3 px-3">
                     {" "}
                     <button type="" class="btn btn-blue text-center">
-                      <Link to="/home"> Login</Link>
+                      <Link to="/dashboard"> Login</Link>
                     </button>{" "}
                   </div>
                   <div class="row mb-4 px-3">

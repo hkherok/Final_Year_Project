@@ -24,7 +24,7 @@ const Signup = () => {
             </div>
           </div>
           <div class="col-md-6  rcol">
-            <form class="sign-up" action="{% url 'signup' %}" method="post">
+            <form>
               <h2 class="heading mb-4 pt-2">Sign up</h2>
 
               <div class="form-group fone mt-2 text-sm">
@@ -89,7 +89,7 @@ const Signup = () => {
               </div>
 
               <button type="" class="btn btn-blue mt-5">
-                <Link to="/home"> Get started now</Link>
+                <Link to="/dashboard"> Get started now</Link>
               </button>
             </form>
             <p class="exist mt-4">

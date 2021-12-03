@@ -8,6 +8,7 @@ import Signup from "./component/signup/Signup";
 import Blog from "./component/blog/Blog";
 import Desease from "./component/desease/Desease";
 import Attention from "./component/Attention/Attention";
+import Dashboard from "./component/user/dashboard/Dashboard";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/home" exact element={<Home />} />
           <Route path="/profile" exact element={<Profile />} />
+          <Route path="/Dashboard" exact element={<Dashboard />} />
           <Route path="/signin" exact element={<Signin />} />
           <Route path="/signup" exact element={<Signup />} />
           <Route path="/blog" exact element={<Blog />} />

@@ -24,7 +24,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a class="nav-link scrollto">About</a>
+                <Link to="/dashboard">Dashboard</Link>
               </li>
 
               <li>
