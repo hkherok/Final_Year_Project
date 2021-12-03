@@ -8,10 +8,8 @@ const Navbar = () => {
       <header id="header" class="d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
           <h1 class="logo">
-            <a>
-              {" "}
-              <Link to="/home">AGRI</Link>
-            </a>
+            {" "}
+            <Link to="/home">AGRI</Link>
           </h1>
 
           <a href="index.html" class="logo">
@@ -88,6 +86,9 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="/profile">Profile</Link>
+              </li>
+              <li>
+                <Link to="/signin">SignIn</Link>
               </li>
               <li>
                 <Link className="getstarted scrollto" to="/attention">

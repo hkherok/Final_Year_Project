@@ -1,23 +1,95 @@
-login-body {
+body {
   color: #000;
   overflow-x: hidden;
   height: 100%;
-  background-image: linear-gradient(to right, #d500f9, #dfcc5f);
+  background-color: #b0bec5;
   background-repeat: no-repeat;
+}
+
+.card0 {
+  box-shadow: 0px 4px 8px 0px #757575;
+  border-radius: 0px;
+}
+
+.card2 {
+  margin: 0px 40px;
+}
+
+.image {
+  width: 360px;
+  height: 280px;
+}
+
+.border-line {
+  border-right: 1px solid #eeeeee;
+}
+
+.facebook {
+  background-color: #3b5998;
+  color: #fff;
+  font-size: 18px;
+  padding-top: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.google {
+  background-color: #e32425;
+  color: #fff;
+  font-size: 18px;
+  padding-top: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.line {
+  height: 1px;
+  width: 45%;
+  background-color: #e0e0e0;
+  margin-top: 10px;
+}
+
+.or {
+  width: 10%;
+  font-weight: bold;
+}
+
+.text-sm {
+  font-size: 14px !important;
+}
+
+::placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+  font-weight: 300;
+}
+
+:-ms-input-placeholder {
+  color: #bdbdbd;
+  font-weight: 300;
+}
+
+::-ms-input-placeholder {
+  color: #bdbdbd;
+  font-weight: 300;
 }
 
 input,
 textarea {
-  background-color: #f3e5f5;
-  border-radius: 50px !important;
-  padding: 12px 15px 12px 15px !important;
+  padding: 10px 12px 10px 12px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  margin-top: 2px;
   width: 100%;
   box-sizing: border-box;
-  border: none !important;
-  border: 1px solid #f3e5f5 !important;
-  font-size: 16px !important;
-  color: #000 !important;
-  font-weight: 400;
+  color: #2c3e50;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 input:focus,
@@ -25,9 +97,8 @@ textarea:focus {
   -moz-box-shadow: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  border: 1px solid #d500f9 !important;
+  border: 1px solid #304ffe;
   outline-width: 0;
-  font-weight: 400;
 }
 
 button:focus {
@@ -37,126 +108,49 @@ button:focus {
   outline-width: 0;
 }
 
-.card {
-  border-radius: 0;
-  border: none;
-}
-
-.card1 {
-  width: 50%;
-  padding: 40px 30px 10px 30px;
-}
-
-.card2 {
-  width: 50%;
-  background-image: linear-gradient(to right, #ffd54f, #d500f9);
-}
-
-#logo {
-  width: 70px;
-  height: 60px;
-}
-
-.heading {
-  margin-bottom: 60px !important;
-}
-
-::placeholder {
-  color: #000 !important;
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
-  color: #000 !important;
-}
-
-::-ms-input-placeholder {
-  color: #000 !important;
-}
-
-.form-control-label {
-  font-size: 12px;
-  margin-left: 15px;
-}
-
-.msg-info {
-  padding-left: 15px;
-  margin-bottom: 30px;
-}
-
-.btn-color {
-  border-radius: 50px;
-  color: #fff;
-  background-image: linear-gradient(to right, #ffd54f, #d500f9);
-  padding: 15px;
-  cursor: pointer;
-  border: none !important;
-  margin-top: 40px;
-}
-
-.btn-color:hover {
-  color: #fff;
-  background-image: linear-gradient(to right, #d500f9, #ffd54f);
-}
-
-.btn-white {
-  border-radius: 50px;
-  color: #d500f9;
-  background-color: #fff;
-  padding: 8px 40px;
-  cursor: pointer;
-  border: 2px solid #d500f9 !important;
-}
-
-.btn-white:hover {
-  color: #fff;
-  background-image: linear-gradient(to right, #ffd54f, #d500f9);
-}
-
 a {
-  color: #000;
+  color: inherit;
+  cursor: pointer;
 }
 
-a:hover {
-  color: #000;
+.btn-blue {
+  background-color: #1a237e;
+  width: 150px;
+  color: #fff;
+  border-radius: 2px;
 }
 
-.bottom {
-  width: 100%;
-  margin-top: 50px !important;
+.btn-blue:hover {
+  background-color: #000;
+  cursor: pointer;
 }
 
-.sm-text {
-  font-size: 15px;
+.bg-blue {
+  color: #fff;
+  background-color: #1a237e;
 }
 
-@media screen and (max-width: 992px) {
-  .card {
-    width: 100%;
-    padding: 40px 30px 10px 30px;
+@media screen and (max-width: 991px) {
+  .logo {
+    margin-left: 0px;
   }
 
-  .card {
-    width: 100%;
+  .image {
+    width: 300px;
+    height: 220px;
   }
 
-  .right {
-    margin-top: 100px !important;
-    margin-bottom: 100px !important;
+  .border-line {
+    border-right: none;
+  }
+
+  .card2 {
+    border-top: 1px solid #eeeeee !important;
+    margin: 0px 15px;
   }
 }
-
 @media screen and (max-width: 768px) {
-  .container {
-    padding: 10px !important;
-  }
-
-  .card {
-    padding: 50px;
-  }
-
-  .right {
-    margin-top: 50px !important;
-    margin-bottom: 50px !important;
+  .lcol {
+    display: none;
   }
 }
