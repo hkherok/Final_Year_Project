@@ -36,7 +36,7 @@ function Signin() {
                   <div class="line"></div>
                 </div>
 
-                <form action="{% url 'loginuser' %}" method="POST">
+                <form>
                   <div class="row px-3">
                     {" "}
                     <label class="mb-1">
