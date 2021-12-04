@@ -280,7 +280,7 @@ function Home() {
           <div class="row content">
             <div class="col-md-5" data-aos="fade-right">
               <img
-                src="https://cdn.pixabay.com/photo/2020/07/23/01/09/field-5430070_960_720.jpg"
+                src="https://img.freepik.com/free-photo/detail-rice-plant-sunset-valencia-with-plantation-out-focus-rice-grains-plant-seed_181624-25838.jpg?size=626&ext=jpg"
                 class="img-fluid"
                 alt=""
               />
@@ -350,23 +350,17 @@ function Home() {
 
           <div class="row content">
             <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
-              <img src="assets/img/features-4.svg" class="img-fluid" alt="" />
+              <img src="https://wallpaperaccess.com/full/137487.jpg" class="img-fluid" alt="" />
             </div>
             <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
               <h3>
-                Quas et necessitatibus eaque impedit ipsum animi consequatur
-                incidunt in
+              The result of innovation
               </h3>
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Using the Agri Calculator will benefit both the service recipient and the service provider. 
               </p>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum
+              The service recipient will get fast and accurate service and the service provider can easily and quickly solve any problem using the Agri Calculator. By using the Agri Calculator, the possible communication noise between the service recipient and the service provider can be brought down to the lowest level. The Agri Calculator actually helps the farmer to properly present his problem to the extension worker. Using it, an advanced farmer can solve his crop problems on his own.
               </p>
             </div>
           </div>

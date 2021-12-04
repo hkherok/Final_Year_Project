@@ -22,7 +22,7 @@ const Navbar = () => {
             <ul>
               <li>
                 <a class="nav-link scrollto active" href="#hero">
-                  <Link to="/home">HOME</Link>
+                  <Link to="/home">Home</Link>
                 </a>
               </li>
               <li>
@@ -90,7 +90,7 @@ const Navbar = () => {
                 <Link to="/profile">Profile</Link>
               </li>
               <li>
-                <Link to="/signin">SignIn</Link>
+                <Link to="/signin">Sign In</Link>
               </li>
               <li>
                 <Link className="getstarted scrollto" to="/attention">
