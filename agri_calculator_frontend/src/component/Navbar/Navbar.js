@@ -8,7 +8,7 @@ const Navbar = () => {
       <header id="header" class="d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
           <h1 class="logo">
-            <Link to="/home">
+            <Link to="/">
               {" "}
               <img src="https://i.ibb.co/xqfFkcR/logo.png" />
             </Link>{" "}
@@ -22,7 +22,7 @@ const Navbar = () => {
             <ul>
               <li>
                 <a class="nav-link scrollto active" href="#hero">
-                  <Link to="/home">Home</Link>
+                  <Link to="/">Home</Link>
                 </a>
               </li>
               <li>

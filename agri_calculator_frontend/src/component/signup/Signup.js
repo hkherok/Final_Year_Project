@@ -84,7 +84,7 @@ const Signup = () => {
                   id="exampleCheck1"
                 />{" "}
                 <label class="form-check-label ml-3" for="exampleCheck1">
-                  &nbsp;I agree to Adsiaa <u>Terms</u> and <u>Privacy Policy</u>
+                  &nbsp;I agree to Agri-Team <u>Terms</u> and <u>Privacy Policy</u>
                 </label>
               </div>
 
@@ -96,7 +96,7 @@ const Signup = () => {
               Existing user?{" "}
               <a>
                 {" "}
-                <Link to="/signin">SignIn</Link>
+                <Link to="/signin">Sign In</Link>
               </a>
             </p>
           </div>

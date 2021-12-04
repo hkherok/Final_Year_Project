@@ -62,17 +62,16 @@ function Signin() {
                   </div>
                   <div class="row px-3 mb-4">
                     <div class="custom-control custom-checkbox custom-control-inline">
-                      {" "}
-                      <input
-                        id="chk1"
-                        type="checkbox"
-                        name="chk"
-                        class="custom-control-input"
-                      />{" "}
-                      <label for="chk1" class="custom-control-label text-sm">
-                        Remember me
-                      </label>{" "}
-                    </div>{" "}
+                    
+                    <input
+                  type="checkbox"
+                  class="form-check-input ml-0"
+                  id="exampleCheck1"
+                />{" "}
+                <label class="form-check-label ml-3" for="exampleCheck1">
+              <p> Remember Me</p>
+                </label>
+                    </div>
                     <a href="#" class="ml-auto mb-0 text-sm">
                       Forgot Password?
                     </a>
