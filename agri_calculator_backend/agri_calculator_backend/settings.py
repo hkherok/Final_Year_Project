@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'massage',
     'desease',
     'user',
-     'corsheaders',
+    'corsheaders',
     'user_profile',
     'user_address',
     'rest_framework',

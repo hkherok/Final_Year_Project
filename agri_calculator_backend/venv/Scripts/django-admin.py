@@ -1,4 +1,4 @@
-#!c:\users\remon\desktop\web\herok\final_year_project\agri_calculator_backend\venv\scripts\python.exe
+#!F:\Final_Year_Project\agri_calculator_backend\venv\Scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
