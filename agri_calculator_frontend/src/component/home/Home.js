@@ -270,10 +270,10 @@ function Home() {
           <div class="section-title">
             <h2 data-aos="fade-in">Features</h2>
             <p data-aos="fade-in">
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            Agri Calculator is a digital endeavor to provide quick and effective solutions to
+            various crop problems of farmers.Farmers can see how to cultivate their land on 
+             our website.
+
             </p>
           </div>
 
@@ -287,21 +287,22 @@ function Home() {
             </div>
             <div class="col-md-7 pt-4" data-aos="fade-left">
               <h3>
-                Voluptatem dignissimos provident quasi corporis voluptates sit
-                assumenda.
+              In this system a unemployed people can be able to learn about Agriculture system.
               </h3>
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              By looking at the pictures here the farmer / user can identify any problem of the crop and the 
+              solution of the problem floats on the monitor just by clicking on the marked picture.
+
               </p>
               <ul>
                 <li>
-                  <i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.
+                  <i class="bi bi-check"></i> Farmers can see how to cultivate their land on our website.
+
                 </li>
                 <li>
-                  <i class="bi bi-check"></i> Duis aute irure dolor in
-                  reprehenderit in voluptate velit.
+                  <i class="bi bi-check"></i> In this system a unemployed people can be able to learn about Agriculture system.
+
+
                 </li>
               </ul>
             </div>
@@ -309,50 +310,39 @@ function Home() {
 
           <div class="row content">
             <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
-              <img src="assets/img/features-2.svg" class="img-fluid" alt="" />
+              <img src="https://i.ibb.co/7Y9cshh/door.png" class="img-fluid" alt="" />
             </div>
             <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
-              <h3>Corporis temporibus maiores provident</h3>
+              <h3>Farmers' door-to-door service: Farmers are getting service at home through Union Digital Center, Fiak and AICC</h3>
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              It is farmer friendly: every picture used in the Agri Calculator is taken from the field and the picture is used exactly as the farmer sees the problem in the field. As a result, the farmer can recognize the problem correctly. (Research has shown that the glitter and the pictures working in Photoshop confuse the farmers.
               </p>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum
+              It is environmentally friendly: it emphasizes environmentally friendly practices in pest management and includes Farmer Behavior Change Communication (FBCC); This will bring about some behavioral changes in the farmers which will reduce the recurrence of the same problem in the future and also reduce the use of chemical pesticides. At the same time, it provides specific advice that will reduce the use of random chemical pesticides.
               </p>
             </div>
           </div>
 
           <div class="row content">
             <div class="col-md-5" data-aos="fade-right">
-              <img src="assets/img/features-3.svg" class="img-fluid" alt="" />
+              <img src="https://media.istockphoto.com/photos/tractor-spraying-pesticides-on-soybean-field-with-sprayer-at-spring-picture-id1181859042?k=20&m=1181859042&s=612x612&w=0&h=HYJg5wgy4nr8_otAl6nNgmXSlTVtfJ9Aa9CUAxl5FHc=" class="img-fluid" alt="" />
             </div>
             <div class="col-md-7 pt-5" data-aos="fade-left">
               <h3>
-                Sunt consequatur ad ut est nulla consectetur reiciendis animi
-                voluptas
+              The rationale for this initiative
               </h3>
               <p>
-                Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus
-                quia minima quod. Sunt saepe odit aut quia voluptatem hic
-                voluptas dolor doloremque.
+              Using the Agri Calculator will benefit both the service recipient and the service provider. The service recipient will get fast and accurate service and the service provider can easily and quickly solve any problem using the Agri Calculator. By using the Agri Calculator, the possible communication noise between the service recipient and the service provider can be brought down to the lowest level. The Agri Calculator actually helps the farmer to properly present his problem to the extension worker. Using it, an advanced farmer can solve his crop problems on his own.
               </p>
               <ul>
                 <li>
-                  <i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.
+                  <i class="bi bi-check"></i>  Up to 7.6% time saved in getting / giving service
                 </li>
                 <li>
-                  <i class="bi bi-check"></i> Duis aute irure dolor in
-                  reprehenderit in voluptate velit.
+                  <i class="bi bi-check"></i>  Save up to 7.00% on getting / giving services
                 </li>
                 <li>
-                  <i class="bi bi-check"></i> Facilis ut et voluptatem aperiam.
-                  Autem soluta ad fugiat.
+                  <i class="bi bi-check"></i>  Travel has been saved up to 7.8% to get / pay for the service
                 </li>
               </ul>
             </div>
