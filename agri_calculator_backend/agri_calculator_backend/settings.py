@@ -32,7 +32,6 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 INSTALLED_APPS = [
     'admin_blog',
-    'admin_desease_entry',
     'admin_main',
     'massage',
     'desease',

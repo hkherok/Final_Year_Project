@@ -15,7 +15,7 @@ class Profile(models.Model):
     email = models.CharField(max_length=100, blank=True, default='')
     nid = models.CharField(max_length=20, blank=True, default='')
     birth_reg_no = models.CharField(max_length=20, blank=True, default='')
-    date_of_birth = models.DateField(auto_now=True, auto_now_add=False)
+    date_of_birth = models.DateField(auto_now=False, auto_now_add=False)
     age = models.IntegerField()
     gender = models.CharField(max_length=10, blank=True, default='')
     nationality = models.CharField(max_length=20, blank=True, default='')
@@ -29,7 +29,7 @@ class Profile(models.Model):
     modified_by = models.CharField(max_length=100, blank=True, default='')
 
     def __str__(self):
-        return "%s the profile" % self.name
+        return "%s the profile" % self.full_name
 
     class Meta:
         ordering = ['created']
