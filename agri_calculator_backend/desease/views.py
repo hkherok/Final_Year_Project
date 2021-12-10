@@ -10,3 +10,4 @@ class DeseaseList(generics.ListCreateAPIView):
 class DeseaseDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Desease.objects.all()
     serializer_class = DeseaseSerializer
+    

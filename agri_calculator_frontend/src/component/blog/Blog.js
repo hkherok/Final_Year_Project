@@ -10,16 +10,16 @@ function Blog() {
               <article class="article">
                 <div class="article-img">
                   <img
-                    src="https://via.placeholder.com/800x350/87CEFA/000000"
+                    src="https://image.freepik.com/free-photo/smart-digital-agriculture-technology-by-futuristic-sensor-data-collection_31965-13402.jpg"
                     title=""
                     alt=""
                   />
                 </div>
                 <div class="article-title">
                   <h6>
-                    <a href="#">Lifestyle</a>
+                    <a href="#">Agriculture</a>
                   </h6>
-                  <h2>They Now Bade Farewell To The Kind But Unseen People</h2>
+                  <h2>“Farmers only worry during the growing season, but townspeople worry all the time.”</h2>
                   <div class="media">
                     <div class="avatar">
                       <img
@@ -30,27 +30,24 @@ function Blog() {
                     </div>
                     <div class="media-body">
                       <label>Rachel Roth</label>
-                      <span>26 FEB 2020</span>
+                      <span>26 FEB 1996</span>
                     </div>
                   </div>
                 </div>
                 <div class="article-content">
                   <p>
-                    Aenean eleifend ante maecenas pulvinar montes lorem et pede
-                    dis dolor pretium donec dictum. Vici consequat justo enim.
-                    Venenatis eget adipiscing luctus lorem. Adipiscing veni amet
-                    luctus enim sem libero tellus viverra venenatis aliquam.
-                    Commodo natoque quam pulvinar elit.
+                  Farming has come a long way since its beginning! It is said that during the first Agricultural Revolution, which started around the 10,000 B.C. it came into prominence when the nomadic tribes started growing crops. The Industrial Revolution, from 1700 AD to 1900 AD helped usher the second Agricultural Revolution which led to faster and more efficient farming technology being discovered. And last but not the least, the Green Revolution in the late 20th century saw population growth and the creation of genetic engineering, chemical fertilizers and biotechnology further aiding the mass production of agricultural goods
                   </p>
+                  <blockquote>
                   <p>
-                    Eget aenean tellus venenatis. Donec odio tempus. Felis arcu
-                    pretium metus nullam quam aenean sociis quis sem neque vici
-                    libero. Venenatis nullam fringilla pretium magnis aliquam
-                    nunc vulputate integer augue ultricies cras. Eget viverra
-                    feugiat cras ut. Sit natoque montes tempus ligula eget vitae
-                    pede rhoncus maecenas consectetuer commodo condimentum
-                    aenean.
+                  “In olden times there were warriors, farmers, craftsmen, and merchants. Agriculture was said to be closer to the source of things than trade or manufacturing, and the farmer was said to be “the cupbearer of the gods.”  He was always able to get by somehow or other and have enough to eat.”
                   </p>
+
+                  <p class="blockquote-footer">
+                  Masanobu Fukuoka {" "}
+                      <cite title="Source Title">'The One-Straw Revolution'</cite>
+                    </p>
+                  </blockquote>
                   <h4>What are my payment options?</h4>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
