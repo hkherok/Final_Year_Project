@@ -82,9 +82,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <a class="nav-link scrollto" href="#contact">
-                  Contact
-                </a>
+                <Link to="/contact">Contact</Link>
               </li>
               <li>
                 <Link to="/profile">Profile</Link>

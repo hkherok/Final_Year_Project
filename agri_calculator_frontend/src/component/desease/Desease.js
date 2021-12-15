@@ -6,11 +6,9 @@ import "./Desease.css";
 const Desease = () => {
   const [APIData, setAPIData] = useState([]);
   useEffect(() => {
-    axios
-      .get(`https://615b12174a360f0017a81474.mockapi.io/fakedata`)
-      .then((response) => {
-        setAPIData(response.data);
-      });
+    axios.get(`http://127.0.0.1:8000/desease/`).then((response) => {
+      setAPIData(response.data);
+    });
   }, []);
   return (
     <div>
@@ -23,12 +21,12 @@ const Desease = () => {
                 <div class="col-xs-6 col-md-4">
                   <div class="product tumbnail thumbnail-3">
                     <a href="#">
-                      <img src={data.image} alt="" />
+                      <img src={data.photo} alt="" />
                     </a>
                     <div class="caption">
                       <h6>
-                        <h3 href="#">{data.name}</h3>
-                        <a href="#">{data.reason}</a>
+                        <h3 href="#">{data.title}</h3>
+                        <a href="#">{data.description}</a>
                       </h6>
                     </div>
                   </div>

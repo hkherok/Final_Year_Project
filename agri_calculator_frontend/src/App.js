@@ -6,6 +6,7 @@ import Profile from "./component/user/profile/Profile";
 import Signin from "./component/signin/Signin";
 import Signup from "./component/signup/Signup";
 import Blog from "./component/blog/Blog";
+import Contact from "./component/contact/Contact";
 import Desease from "./component/desease/Desease";
 import Attention from "./component/Attention/Attention";
 import Dashboard from "./component/user/dashboard/Dashboard";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/signin" exact element={<Signin />} />
           <Route path="/signup" exact element={<Signup />} />
           <Route path="/blog" exact element={<Blog />} />
+          <Route path="/contact" exact element={<Contact />} />
           <Route path="/desease" exact element={<Desease />} />
           <Route path="/attention" exact element={<Attention />} />
         </Routes>
