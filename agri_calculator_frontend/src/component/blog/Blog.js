@@ -36,45 +36,35 @@ function Blog() {
                 </div>
                 <div class="article-content">
                   <p>
-                  Farming has come a long way since its beginning! It is said that during the first Agricultural Revolution, which started around the 10,000 B.C. it came into prominence when the nomadic tribes started growing crops. The Industrial Revolution, from 1700 AD to 1900 AD helped usher the second Agricultural Revolution which led to faster and more efficient farming technology being discovered. And last but not the least, the Green Revolution in the late 20th century saw population growth and the creation of genetic engineering, chemical fertilizers and biotechnology further aiding the mass production of agricultural goods
-                  </p>
-                  <blockquote>
-                  <p>
-                  “In olden times there were warriors, farmers, craftsmen, and merchants. Agriculture was said to be closer to the source of things than trade or manufacturing, and the farmer was said to be “the cupbearer of the gods.”  He was always able to get by somehow or other and have enough to eat.”
-                  </p>
-
-                  <p class="blockquote-footer">
-                  Masanobu Fukuoka {" "}
-                      <cite title="Source Title">'The One-Straw Revolution'</cite>
-                    </p>
-                  </blockquote>
-                  <h4>What are my payment options?</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Farming has come a long way since its beginning! It is said that during the first Agricultural Revolution, which started around the 10,000 B.C. it came into prominence when the nomadic tribes started growing crops. The Industrial Revolution, from 1700 AD to 1900 AD helped usher the second Agricultural Revolution which led to faster and more efficient farming technology being discovered. And last but not the least, the Green Revolution in the late 20th century saw population growth and the creation of genetic engineering, chemical fertilizers and biotechnology further aiding the mass production of agricultural goods
                   </p>
                   <blockquote>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam.
+                      “In olden times there were warriors, farmers, craftsmen, and merchants. Agriculture was said to be closer to the source of things than trade or manufacturing, and the farmer was said to be “the cupbearer of the gods.”  He was always able to get by somehow or other and have enough to eat.”
+                    </p>
+
+                    <p class="blockquote-footer">
+                      Masanobu Fukuoka {" "}
+                      <cite title="Source Title">'The One-Straw Revolution'</cite>
+                    </p>
+                  </blockquote>
+                  <h4>Agriculture Information Service</h4>
+                  <p>
+                  Agriculture Information Service (AIS) a communication department under the Ministry of Agriculture, located at Khamarbari, Farmgate, dhaka. Activities related to agricultural information and communication started with the establishment of the Agriculture Information Service in 1961. The main objectives of AIS are to: (i) produce training aids, and provide information and educational materials for field staff and farmers in support of improved techniques and better methods of cultivation; (ii) create agricultural literature on site specific information in English and Bengali; (iii) establish distribution channels for the produced materials of communication throughout the country; (vi) train field staff in use of information materials; and (v) motivate rural people for formation of Chasi (farmers') clubs, Jele (fishermen's) clubs, etc.
+                  </p>
+                  <blockquote>
+                    <p>
+                    The farmer is the only man in our economy who buys everything at retail, sells everything at wholesale, and pays the freight both ways.
                     </p>
                     <p class="blockquote-footer">
                       Someone famous in{" "}
-                      <cite title="Source Title">Dick Grayson</cite>
+                      <cite title="Source Title">JOHN F. KENNEDY</cite>
                     </p>
                   </blockquote>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                  Burn down your cities and leave our farms, and your cities will spring up again as if by magic; but destroy our farms and the grass will grow in the streets of every city in the country.
+
+
                   </p>
                 </div>
                 <div class="nav tag-cloud">
@@ -144,29 +134,28 @@ function Blog() {
                   <div class="media align-items-center">
                     <div class="avatar">
                       <img
-                        src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                        src="https://i.ibb.co/xqfFkcR/logo.png"
                         title=""
                         alt=""
                       />
                     </div>
                     <div class="media-body">
                       <h6>
-                        Hello, I'm
-                        <br /> Rachel Roth
+                        Hello, We are 
+                        <br /> "Agri Calculator Team"
                       </h6>
                     </div>
                   </div>
                   <p>
-                    I design and develop services for customers of all sizes,
-                    specializing in creating stylish, modern websites, web
-                    services and online stores
+                    We are design and develop services for farmer's.
+                  
                   </p>
                 </div>
               </div>
 
               <div class="widget widget-post">
                 <div class="widget-title">
-                  <h3>Trending Now</h3>
+                  <h3>Trending News</h3>
                 </div>
                 <div class="widget-body"></div>
               </div>
@@ -181,23 +170,23 @@ function Blog() {
                       <div class="lpa-title">
                         <h5>
                           <a href="#">
-                            Prevent 75% of visitors from google analytics
+                          Soil resilience needed to fuel second Green Revolution
                           </a>
                         </h5>
                       </div>
                       <div class="lpa-meta">
                         <a class="name" href="#">
-                          Rachel Roth
+                        Gil Gullickson
                         </a>
                         <a class="date" href="#">
-                          26 FEB 2020
+                          15 Dec 2021
                         </a>
                       </div>
                     </div>
                     <div class="lpa-right">
                       <a href="#">
                         <img
-                          src="https://via.placeholder.com/400x200/FFB6C1/000000"
+                          src="https://static.agriculture.com/styles/node_article_image_full_large/s3/image/2021/12/15/DSC_0045.JPG?timestamp=1639573787"
                           title=""
                           alt=""
                         />
@@ -209,23 +198,23 @@ function Blog() {
                       <div class="lpa-title">
                         <h5>
                           <a href="#">
-                            Prevent 75% of visitors from google analytics
+                          Iowa farmland values up 29%
                           </a>
                         </h5>
                       </div>
                       <div class="lpa-meta">
                         <a class="name" href="#">
-                          Rachel Roth
+                        Bill Spiegel
                         </a>
                         <a class="date" href="#">
-                          26 FEB 2020
+                          14 Dec 2021
                         </a>
                       </div>
                     </div>
                     <div class="lpa-right">
                       <a href="#">
                         <img
-                          src="https://via.placeholder.com/400x200/FFB6C1/000000"
+                          src="https://static.agriculture.com/styles/node_article_image_full_large/s3/image/2021/12/14/IowaLandValues.jpg?timestamp=1639511863"
                           title=""
                           alt=""
                         />
@@ -237,23 +226,23 @@ function Blog() {
                       <div class="lpa-title">
                         <h5>
                           <a href="#">
-                            Prevent 75% of visitors from google analytics
+                          Dangerous winds could accompany record-breaking Wednesday heat
                           </a>
                         </h5>
                       </div>
                       <div class="lpa-meta">
                         <a class="name" href="#">
-                          Rachel Roth
+                        Iowa Capital Dispatch
                         </a>
                         <a class="date" href="#">
-                          26 FEB 2020
+                          12 FEB 2020
                         </a>
                       </div>
                     </div>
                     <div class="lpa-right">
                       <a href="#">
                         <img
-                          src="https://via.placeholder.com/400x200/FFB6C1/000000"
+                          src="https://static.agriculture.com/styles/node_article_image_full_large/s3/s3fs-public/image/2018/10/12/Bane%20Farm%20with%20Wind%20Turbine.JPG?timestamp=1539352362"
                           title=""
                           alt=""
                         />
