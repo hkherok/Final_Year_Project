@@ -9,17 +9,17 @@ const Footer = () => {
             <div class="row">
               <div class="col-lg-3 col-md-6 footer-contact">
                 <h3>
-                  BizLand<span>.</span>
+                  Agri Calculator<span>.</span>
                 </h3>
                 <p>
-                  A108 Adam Street <br />
-                  New York, NY 535022
+                  Team Of Agri Calculator<br />
+                  Dhanmondi,Dhaka-1207
                   <br />
-                  United States <br />
+                  Bangladesh <br />
                   <br />
-                  <strong>Phone:</strong> +1 5589 55488 55
+                  <strong>Phone:</strong> +88 01701449225
                   <br />
-                  <strong>Email:</strong> info@example.com
+                  <strong>Email:</strong> agri.calculator@gmail.com
                   <br />
                 </p>
               </div>
@@ -76,8 +76,7 @@ const Footer = () => {
               <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Our Social Networks</h4>
                 <p>
-                  Cras fermentum odio eu feugiat lide par naso tierra videa
-                  magna derita valies
+                “Farming looks mighty easy when your plow is a pencil, and you’re a thousand miles from the corn field.”
                 </p>
                 <div class="social-links mt-3">
                   <a href="#" class="twitter">
@@ -105,7 +104,7 @@ const Footer = () => {
           <div class="copyright">
             &copy; Copyright{" "}
             <strong>
-              <span>BizLand</span>
+              <span>Agri_Team</span>
             </strong>
             . All Rights Reserved
           </div>
