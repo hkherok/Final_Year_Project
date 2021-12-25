@@ -31,7 +31,7 @@ const Navbar = () => {
 
               <li>
                 <a class="nav-link scrollto ">
-                  <Link to="/desease">Desease</Link>
+                  <Link to="/desease">Disease</Link>
                 </a>
               </li>
               <li>

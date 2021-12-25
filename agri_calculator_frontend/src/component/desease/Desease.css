@@ -1,5 +1,5 @@
 body {
-  background: #ddd;
+  background: rgb(250, 249, 249);
 }
 
 /*
@@ -17,7 +17,7 @@ body {
 }
 
 .product .caption h6 {
-  color: #455a64;
+  color: #000000;
 }
 
 .product .caption .price + .price {
@@ -31,7 +31,7 @@ body {
 }
 
 .product.tumbnail img:hover {
-  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 25px 0 rgba(136, 49, 49, 0.2);
 }
 
 .single-product span {
@@ -41,7 +41,7 @@ body {
 .single-product .rating .fa-star,
 .single-product .rating .fa-star-o {
   font-size: 16px;
-  color: #f7d4a0;
+  color: #e90e0e;
   margin-left: 2px;
 }
 
@@ -89,8 +89,8 @@ body {
 }
 
 .single-product .caption .info-list {
-  border-bottom: 1px solid #f3f3ed;
-  border-top: 1px solid #f3f3ed;
+  border-bottom: 1px solid #f5f5f5;
+  border-top: 1px solid #f5f5f2;
   font-family: Montserrat, sans-serif;
   padding-top: 26px;
   padding-bottom: 26px;
@@ -108,14 +108,14 @@ body {
 .single-product .caption .info-list dt {
   letter-spacing: 0.08em;
   font-size: 12px;
-  color: #a7b0b4;
+  color: #edf1f3;
   width: 35%;
   text-transform: uppercase;
 }
 
 .single-product .caption .info-list dd {
   font-size: 15px;
-  color: #565452;
+  color: #f3f2f0;
   width: 62.5%;
 }
 
@@ -145,7 +145,7 @@ body {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   letter-spacing: 0.02em;
-  color: #2b2f3e;
+  color: #eeeef0;
 }
 
 .price.sale {
@@ -153,7 +153,7 @@ body {
 }
 
 .price del {
-  color: #b0bec5;
+  color: #ecf1f3;
 }
 
 .quantity {
@@ -180,10 +180,10 @@ body {
   padding-top: 4px;
   width: 22px;
   padding-bottom: 4px;
-  color: #b0bec5;
+  color: #eef0f1;
   cursor: pointer;
 }
 
 .quantity [class*="fa-"]:hover {
-  color: #455a64;
+  color: #dee4e7;
 }

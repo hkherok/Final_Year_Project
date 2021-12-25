@@ -14,7 +14,7 @@ const Desease = () => {
     <div>
       <div className="container">
         <div class="container bootstrap snipets">
-          <h1 class="text-center text-muted">Disease</h1>
+          <h1 class="text-center text-muted">Disease </h1>
           <div class="row flow-offset-2">
             {APIData.map((data) => {
               return (
@@ -26,7 +26,7 @@ const Desease = () => {
                     <div class="caption">
                       <h6>
                         <h3 href="#">{data.title}</h3>
-                        <a href="#">{data.description}</a>
+                        <p href="#">{data.description}</p>
                       </h6>
                     </div>
                   </div>
