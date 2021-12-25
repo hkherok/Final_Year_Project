@@ -1,9 +1,10 @@
 import React from "react";
+import Calculation from "../../calculation/Calculation";
 
 function Dashboard() {
   return (
     <div>
-      <h1>Welcome to Dashboard</h1>
+      <Calculation/>
     </div>
   );
 }

@@ -10,6 +10,7 @@ import Contact from "./component/contact/Contact";
 import Desease from "./component/desease/Desease";
 import Attention from "./component/Attention/Attention";
 import Dashboard from "./component/user/dashboard/Dashboard";
+import Calculation from "./component/calculation/Calculation"
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/contact" exact element={<Contact />} />
           <Route path="/desease" exact element={<Desease />} />
           <Route path="/attention" exact element={<Attention />} />
+          <Route path="/calculation" exact element={<Calculation />} />
         </Routes>
         <Footer />
       </Router>

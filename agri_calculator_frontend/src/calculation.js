@@ -1,12 +1,37 @@
-data = [
+export class Seed{
+    id;
+    area = new Array();
+    Paddy_variant = new Array();
+    Seed_sowing_first_date;
+    Seed_sowing_first_month;
+    Seed_sowing_last_date;
+    Seed_sowing_last_month;
+    first_age;
+    second_age;
+    first_date;
+    first_month;
+    last_date;
+    last_month;
+    first_length;
+    last_length;
+    seed_count;
+    full_length;
+    urea;
+    tsp;
+    mop;
+    gipsam;
+    zinc;
+}
+
+export const data = [
     {
         id: 1,
         area: ["sylhet", "habiganj", "sunamganj", "moulvibazar"],
-        Paddy_variant: ["Br-26","Bri-48", "Bri-55", "Bri-82"],
+        Paddy_variant: ["Br-26", "Bri-48", "Bri-55", "Bri-82"],
         Seed_sowing_first_date: 30,
-        Seed_sowing_first_month: 03,
+        Seed_sowing_first_month: 3,
         Seed_sowing_last_date: 20,
-        Seed_sowing_last_month: 04,
+        Seed_sowing_last_month: 4,
         first_age: 15,
         second_age: 20,
         first_date: 15,
@@ -19,20 +44,20 @@ data = [
         full_length: 1,
         urea: 18,
         tsp: 7,
-        mop: 10, 
+        mop: 10,
         gipsam: 5,
         zinc: 0.7
-    }
+    },
 
 
     {
         id: 2,
-        area: ["dhaka", "ghazipur", "narayanganj", "manikganj", "narsingdi","tangail", "munshiganj","kishoreganj"],
+        area: ["dhaka", "ghazipur", "narayanganj", "manikganj", "narsingdi", "tangail", "munshiganj", "kishoreganj"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82", "Bri-85"],
         Seed_sowing_first_date: 25,
-        Seed_sowing_first_month: 03,
+        Seed_sowing_first_month: 3,
         Seed_sowing_last_date: 20,
-        Seed_sowing_last_month: 04,
+        Seed_sowing_last_month: 4,
         first_age: 15,
         second_age: 20,
         first_date: 15,
@@ -45,10 +70,10 @@ data = [
         full_length: 1,
         urea: 18,
         tsp: 7,
-        mop: 10, 
+        mop: 10,
         gipsam: 5,
         zinc: 0.7
-    }
+    },
 
 
 
@@ -57,9 +82,9 @@ data = [
         area: ["cummila", "chandpur", "Brahmanbaria"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82", "Bri-85"],
         Seed_sowing_first_date: 10,
-        Seed_sowing_first_month: 03,
+        Seed_sowing_first_month: 3,
         Seed_sowing_last_date: 15,
-        Seed_sowing_last_month: 04,
+        Seed_sowing_last_month: 4,
         first_age: 15,
         second_age: 20,
         first_date: 30,
@@ -72,10 +97,10 @@ data = [
         full_length: 1,
         urea: 18,
         tsp: 7,
-        mop: 10, 
+        mop: 10,
         gipsam: 5,
         zinc: 0.7
-    }
+    },
 
 
 
@@ -86,9 +111,9 @@ data = [
         area: ["mymensingh", "jamalpur", "netrokona", "serpur"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-55", "Bri-82"],
         Seed_sowing_first_date: 30,
-        Seed_sowing_first_month: 03,
+        Seed_sowing_first_month: 3,
         Seed_sowing_last_date: 20,
-        Seed_sowing_last_month: 04,
+        Seed_sowing_last_month: 4,
         first_age: 15,
         second_age: 20,
         first_date: 15,
@@ -101,10 +126,10 @@ data = [
         full_length: 1,
         urea: 18,
         tsp: 7,
-        mop: 10, 
+        mop: 10,
         gipsam: 5,
         zinc: 0.7
-    }
+    },
 
 
 
@@ -116,9 +141,9 @@ data = [
         area: ["chittagong", "cox's_bazar", "noakhali", "lakshmipur"],
         Paddy_variant: ["Bri-26", "Bri-48", "Bri-55", "Bri-82", "Bri-85"],
         Seed_sowing_first_date: 25,
-        Seed_sowing_first_month: 03,
+        Seed_sowing_first_month: 3,
         Seed_sowing_last_date: 20,
-        Seed_sowing_last_month: 04,
+        Seed_sowing_last_month: 4,
         first_age: 15,
         second_age: 20,
         first_date: 30,
@@ -131,11 +156,10 @@ data = [
         full_length: 1,
         urea: 18,
         tsp: 7,
-        mop: 10, 
+        mop: 10,
         gipsam: 5,
         zinc: 0.7
-    }
-
+    },
 
 
     {
@@ -143,9 +167,9 @@ data = [
         area: ["rangpur", "gaibandha", "lalmonirhat", "kurigram", "nilphamari"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82"],
         Seed_sowing_first_date: 30,
-        Seed_sowing_first_month: 03,
+        Seed_sowing_first_month: 3,
         Seed_sowing_last_date: 20,
-        Seed_sowing_last_month: 04,
+        Seed_sowing_last_month: 4,
         first_age: 15,
         second_age: 20,
         first_date: 15,
@@ -158,23 +182,19 @@ data = [
         full_length: 1,
         urea: 18,
         tsp: 7,
-        mop: 10, 
+        mop: 10,
         gipsam: 5,
         zinc: 0.7
-    }
-
-
-
-
+    },
 
     {
         id: 7,
         area: ["dinajpur", "panchagarh", "thakurgaon"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82"],
         Seed_sowing_first_date: 30,
-        Seed_sowing_first_month: 03,
+        Seed_sowing_first_month: 3,
         Seed_sowing_last_date: 20,
-        Seed_sowing_last_month: 04,
+        Seed_sowing_last_month: 4,
         first_age: 15,
         second_age: 20,
         first_date: 15,
@@ -187,10 +207,10 @@ data = [
         full_length: 1,
         urea: 18,
         tsp: 7,
-        mop: 10, 
+        mop: 10,
         gipsam: 5,
         zinc: 0.7
-    }
+    },
 
 
 
@@ -200,9 +220,9 @@ data = [
         area: ["bogra", "joypurhat", "sirajganj", "pabna"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82"],
         Seed_sowing_first_date: 30,
-        Seed_sowing_first_month: 03,
+        Seed_sowing_first_month: 3,
         Seed_sowing_last_date: 20,
-        Seed_sowing_last_month: 04,
+        Seed_sowing_last_month: 4,
         first_age: 15,
         second_age: 20,
         first_date: 15,
@@ -215,10 +235,10 @@ data = [
         full_length: 1,
         urea: 18,
         tsp: 7,
-        mop: 10, 
+        mop: 10,
         gipsam: 5,
         zinc: 0.7
-    }
+    },
 
 
 
@@ -229,9 +249,9 @@ data = [
         area: ["rajshahi", "nouga", "capai_nobabgonj", "natore"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82"],
         Seed_sowing_first_date: 30,
-        Seed_sowing_first_month: 03,
+        Seed_sowing_first_month: 3,
         Seed_sowing_last_date: 20,
-        Seed_sowing_last_month: 04,
+        Seed_sowing_last_month: 4,
         first_age: 15,
         second_age: 20,
         first_date: 15,
@@ -244,18 +264,18 @@ data = [
         full_length: 1,
         urea: 18,
         tsp: 7,
-        mop: 10, 
+        mop: 10,
         gipsam: 5,
         zinc: 0.7
-    }
+    },
     {
         id: 10,
-        area: ["faridpur", "rajbari", "gopalganj", "shariatpur" ,"madaripur"],
-        Paddy_variant: ["Br-26", "Bri-27", "Bri-48", "Bri-82" ,"Bri-85"],
+        area: ["faridpur", "rajbari", "gopalganj", "shariatpur", "madaripur"],
+        Paddy_variant: ["Br-26", "Bri-27", "Bri-48", "Bri-82", "Bri-85"],
         Seed_sowing_first_date: 30,
-        Seed_sowing_first_month: 03,
+        Seed_sowing_first_month: 3,
         Seed_sowing_last_date: 20,
-        Seed_sowing_last_month: 04,
+        Seed_sowing_last_month: 4,
         first_age: 15,
         second_age: 20,
         first_date: 15,
@@ -268,20 +288,20 @@ data = [
         full_length: 1,
         urea: 18,
         tsp: 7,
-        mop: 10, 
+        mop: 10,
         gipsam: 5,
         zinc: 0.7
-    }
+    },
 
 
     {
         id: 11,
-        area: ["jessore", "jhenaidah", "magura", "kushtia" ,"chuadanga"],
+        area: ["jessore", "jhenaidah", "magura", "kushtia", "chuadanga"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82"],
         Seed_sowing_first_date: 30,
-        Seed_sowing_first_month: 03,
+        Seed_sowing_first_month: 3,
         Seed_sowing_last_date: 20,
-        Seed_sowing_last_month: 04,
+        Seed_sowing_last_month: 4,
         first_age: 15,
         second_age: 20,
         first_date: 15,
@@ -294,10 +314,10 @@ data = [
         full_length: 1,
         urea: 18,
         tsp: 7,
-        mop: 10, 
+        mop: 10,
         gipsam: 5,
         zinc: 0.7
-    }
+    },
 
 
 
@@ -306,9 +326,9 @@ data = [
         area: ["khulna", "bagerhat", "satkhira", "narail"],
         Paddy_variant: ["Br-26", "Bri-27", "Bri-48", "Bri-55", "Bri-82"],
         Seed_sowing_first_date: 30,
-        Seed_sowing_first_month: 03,
+        Seed_sowing_first_month: 3,
         Seed_sowing_last_date: 20,
-        Seed_sowing_last_month: 04,
+        Seed_sowing_last_month: 4,
         first_age: 15,
         second_age: 20,
         first_date: 15,
@@ -321,7 +341,7 @@ data = [
         full_length: 1,
         urea: 18,
         tsp: 7,
-        mop: 10, 
+        mop: 10,
         gipsam: 5,
         zinc: 0.7
     }

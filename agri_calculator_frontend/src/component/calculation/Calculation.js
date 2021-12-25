@@ -1,0 +1,231 @@
+import React from 'react'
+import { data, Seed } from '../../calculation'
+import Demo from './Demo'
+
+let seed;
+let result;
+export default function Calculation() {
+    return (
+        <>
+            <div>
+                <form>
+                    <label>আপনার জেলা পছন্দ করুনঃ</label>
+                    <select>
+                        <option selected value="coconut">Select Option</option>
+                        <option value="cumilla">কুমিল্লা</option>
+                        <option value="feni">ফেনী</option>
+                        <option value="brahmanbaria">ব্রাহ্মণবাড়িয়া</option>
+                        <option value="rangamati">
+                            রাঙ্গামাটি
+                        </option>
+                        <option value="noakhali">
+                            নোয়াখালী</option>
+                        <option value="chandpur">
+                            চাঁদপুর
+                        </option>
+                        <option value="Lakshmipur">
+                            লক্ষ্মীপুর
+                        </option>
+                        <option value="chittagong">
+                            চট্টগ্রাম
+                        </option>
+                        <option value="cox's_bazar">
+                            কক্সবাজার
+                        </option>
+                        <option value="khagrachhari">
+                            খাগড়াছড়ি
+                        </option>
+                        <option value="bandarban">
+                            বান্দরবান
+                        </option>
+                        <option value="sirajganj">
+                            সিরাজগঞ্জ
+                        </option>
+                        <option value="pabna">
+                            পাবনা
+                        </option>
+                        <option value="bogura">
+                            বগুড়া
+                        </option>
+                        <option value="rajshahi">
+                            রাজশাহী
+                        </option>
+                        <option value="natore">
+                            নাটোর
+                        </option>
+                        <option value="joypurhat">
+                            জয়পুরহাট
+                        </option>
+                        <option value="chapainawabganj">
+                            চাঁপাইনবাবগঞ্জ
+                        </option>
+                        <option value="naogaon">
+                            নওগাঁ
+                        </option>
+                        <option value="jessore">
+                            যশোর
+                        </option>
+                        <option value="satkhira">
+                            সাতক্ষীরা
+                        </option>
+                        <option value="meherpur">
+                            মেহেরপুর
+                        </option>
+                        <option value="narail">
+                            নড়াইল
+                        </option>
+                        <option value="chuadanga">
+                            চুয়াডাঙ্গা
+                        </option>
+                        <option value="kushtia">
+                            কুষ্টিয়া
+                        </option>
+                        <option value="magura">
+                            মাগুরা
+                        </option>
+                        <option value="khulna">
+                            খুলনা
+                        </option>
+                        <option value="bagerhat">
+                            বাগেরহাট
+                        </option>
+                        <option value="jhenaidah">
+                            ঝিনাইদহ
+                        </option>
+                        <option value="jhalakathi">
+                            ঝালকাঠি
+                        </option>
+                        <option value="patuakhali">
+                            পটুয়াখালী
+                        </option>
+                        <option value="pirojpur">
+                            পিরোজপুর
+                        </option>
+                        <option value="barisal">
+                            বরিশাল
+                        </option>
+                        <option value="bhola">
+                            ভোলা
+                        </option>
+                        <option value="barguna">
+                            বরগুনা
+                        </option>
+                        <option value="sylhet">
+                            সিলেট
+                        </option>
+                        <option value="moulvibazar">
+                            মৌলভীবাজার
+                        </option>
+                        <option value="habiganj">
+                            হবিগঞ্জ
+                        </option>
+                        <option value="sunamganj">
+                            সুনামগঞ্জ
+                        </option>
+                        <option value="narsingdi">
+                            নরসিংদী
+                        </option>
+                        <option value="gazipur">
+                            গাজীপুর
+                        </option>
+                        <option value="shariatpur">
+                            শরীয়তপুর
+                        </option>
+                        <option value="narayanganj">
+                            নারায়ণগঞ্জ
+                        </option>
+                        <option value="tangail">
+                            টাঙ্গাইল
+                        </option>
+                        <option value="kishoreganj">
+                            কিশোরগঞ্জ
+                        </option>
+                        <option value="manikganj">
+                            মানিকগঞ্জ
+                        </option>
+                        <option value="dhaka">
+                            ঢাকা
+                        </option>
+                        <option value="munshiganj">
+                            মুন্সিগঞ্জ
+                        </option>
+                        <option value="rajbari">
+                            রাজবাড়ী
+                        </option>
+                        <option value="madaripur">
+                            মাদারীপুর
+                        </option>
+                        <option value="gopalganj">
+                            গোপালগঞ্জ
+                        </option>
+                        <option value="faridpur">
+                            ফরিদপুর
+                        </option>
+                        <option value="panchagarh">
+                            পঞ্চগড়
+                        </option>
+                        <option value="dinajpur">
+                            দিনাজপুর
+                        </option>
+                        <option value="lalmonirhat">
+                            লালমনিরহাট
+                        </option>
+                        <option value="nilphamari">
+                            নীলফামারী
+                        </option>
+                        <option value="gaibandha">
+                            গাইবান্ধা
+                        </option>
+                        <option value="thakurgaon">
+                            ঠাকুরগাঁও
+                        </option>
+                        <option value="rangpur">
+                            রংপুর
+                        </option>
+                        <option value="kurigram">
+                            কুড়িগ্রাম
+                        </option>
+                        <option value="sherpur">
+                            শেরপুর
+                        </option>
+                        <option value="mymensingh">
+                            ময়মনসিংহ
+                        </option>
+                        <option value="jamalpur">
+                            জামালপুর
+                        </option>
+                        <option value="netrokona">
+                            নেত্রকোণা
+                        </option>
+                    </select>
+                    <label>জমির পরিমাণঃ</label>
+                    <input type="text" />
+                    <button onClick={Calculator("dhaka", 3)}>Click Me</button>
+                </form>
+            </div>
+            <Demo/>
+        </>
+    )
+}
+
+function Calculator(district, land) {
+    const allInfo = data;
+    let flag = new Boolean(false);
+    for (let i = 0; i < allInfo.length; i++) {
+        //console.log(allInfo[i]);
+        for (let j = 0; j < allInfo[i].area.length; j++) {
+            //console.log(allInfo[i].area[j]);
+
+            if (district == allInfo[i].area[j]) {
+                flag = true;
+                seed = allInfo[i];
+                console.log("Is Execute!!");
+                break;
+            }
+        }
+        if (flag == true) {
+            break;
+        }
+    }
+    console.log(seed);
+}
