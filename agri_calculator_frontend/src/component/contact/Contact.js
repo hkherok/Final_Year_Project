@@ -36,7 +36,7 @@ const Contact = () => {
                     <h3>Call Us</h3>
                     <p>
                       +88 01701449225
-                      
+
                     </p>
                   </div>
                 </div>
@@ -45,10 +45,8 @@ const Contact = () => {
 
             <div class="col-lg-6">
               <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                class="php-email-form"
+                action="https://formspree.io/f/meqnoojy"
+                method="POST"
               >
                 <div class="row">
                   <div class="col-md-6 form-group">
@@ -92,14 +90,14 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <div class="my-3">
-                  <div class="loading">Loading</div>
+
                   <div class="error-message"></div>
                   <div class="sent-message">
-                    Your message has been sent. Thank you!
+
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit">Send Message</button>
+                  <button className="btn btn-primary" type="submit">Send Message</button>
                 </div>
               </form>
             </div>
