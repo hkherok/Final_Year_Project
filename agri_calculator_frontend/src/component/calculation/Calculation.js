@@ -1,16 +1,45 @@
 import React from 'react'
 import { data, Seed } from '../../calculation'
-import Demo from './Demo'
 
-let seed;
-let result;
+import { useReducer, useState } from 'react';
+
+const formReducer = (state, event) => {
+    return {
+        ...state,
+        [event.name]: event.value
+    }
+}
+
+let seed = new Seed();
+let result = new Array();
+let tsp, district, land;
 export default function Calculation() {
+    const [formData, setFormData] = useReducer(formReducer, {});
+    const [submitting, setSubmitting] = useState(false);
+
+    const handleSubmit = event => {
+        event.preventDefault();
+        setSubmitting(true);
+
+        setTimeout(() => {
+            setSubmitting(false);
+        }, 20000);
+    }
+
+    const handleChange = event => {
+        setFormData({
+            name: event.target.name,
+            value: event.target.value,
+        });
+    }
+
+
     return (
         <>
             <div>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <label>আপনার জেলা পছন্দ করুনঃ</label>
-                    <select>
+                    <select name="district" onChange={handleChange}>
                         <option selected value="coconut">Select Option</option>
                         <option value="cumilla">কুমিল্লা</option>
                         <option value="feni">ফেনী</option>
@@ -199,16 +228,33 @@ export default function Calculation() {
                         </option>
                     </select>
                     <label>জমির পরিমাণঃ</label>
-                    <input type="text" />
-                    <button onClick={Calculator("dhaka", 3)}>Click Me</button>
+                    <input type="text" name="land" onChange={handleChange} />
+                    <button type='submit'>Submit</button>
                 </form>
+                <h1>How About Them Apples</h1>
+                {submitting &&
+                    <div>
+                        You are submitting the following:
+                        <ul>
+                            {Object.entries(formData).map(([name, value]) => (
+                                <li key={name}><strong>{name}</strong>:{value.toString()}</li>
+                            ))}
+                        </ul>
+                        <ul>
+                            {Calculator(formData['district'], formData['land'])}
+                            {Object.entries(seed).map(([name, value]) => (
+                                <li key={name}><strong>{name}</strong>:{value.toString()}</li>
+                            ))}
+                        </ul>
+                    </div>
+                }
             </div>
-            <Demo/>
         </>
     )
 }
 
 function Calculator(district, land) {
+    console.log(district)
     const allInfo = data;
     let flag = new Boolean(false);
     for (let i = 0; i < allInfo.length; i++) {
@@ -228,4 +274,9 @@ function Calculator(district, land) {
         }
     }
     console.log(seed);
+    seed.urea = parseFloat(seed.urea) * parseInt(land);
+    seed.tsp = parseFloat(seed.tsp) * parseInt(land);
+    seed.mop = parseFloat(seed.mop) * parseInt(land);
+    seed.gipsam = parseFloat(seed.mop) * parseInt(land);
+    seed.zinc = parseFloat(seed.zinc) * parseInt(land);
 }

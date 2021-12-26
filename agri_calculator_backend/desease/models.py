@@ -7,7 +7,7 @@ class Desease(models.Model):
     description = models.CharField(max_length=50000, blank=True, default='')
 
     def __str__(self):
-        return "%s the profile" % self.title
+        return "%s the desease" % self.title
 
     class Meta:
         ordering = ['created']
