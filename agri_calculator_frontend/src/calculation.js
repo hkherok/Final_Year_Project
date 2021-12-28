@@ -1,4 +1,4 @@
-export class Seed{
+export class Seed {
     id;
     area = new Array();
     Paddy_variant = new Array();
@@ -52,7 +52,7 @@ export const data = [
 
     {
         id: 2,
-        area: ["dhaka", "ghazipur", "narayanganj", "manikganj", "narsingdi", "tangail", "munshiganj", "kishoreganj"],
+        area: ["dhaka", "gazipur", "narayanganj", "manikganj", "narsingdi", "tangail", "munshiganj", "kishoreganj"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82", "Bri-85"],
         Seed_sowing_first_date: 25,
         Seed_sowing_first_month: 3,
@@ -79,7 +79,7 @@ export const data = [
 
     {
         id: 3,
-        area: ["cummila", "chandpur", "Brahmanbaria"],
+        area: ["cumilla", "chandpur", "brahmanbaria"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82", "Bri-85"],
         Seed_sowing_first_date: 10,
         Seed_sowing_first_month: 3,
@@ -108,7 +108,7 @@ export const data = [
 
     {
         id: 4,
-        area: ["mymensingh", "jamalpur", "netrokona", "serpur"],
+        area: ["mymensingh", "jamalpur", "netrokona", "sherpur"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-55", "Bri-82"],
         Seed_sowing_first_date: 30,
         Seed_sowing_first_month: 3,
@@ -138,7 +138,7 @@ export const data = [
 
     {
         id: 5,
-        area: ["chittagong", "cox's_bazar", "noakhali", "lakshmipur"],
+        area: ["chittagong", "cox's_bazar", "noakhali", "Lakshmipur"],
         Paddy_variant: ["Bri-26", "Bri-48", "Bri-55", "Bri-82", "Bri-85"],
         Seed_sowing_first_date: 25,
         Seed_sowing_first_month: 3,
@@ -217,7 +217,7 @@ export const data = [
 
     {
         id: 8,
-        area: ["bogra", "joypurhat", "sirajganj", "pabna"],
+        area: ["bogura", "joypurhat", "sirajganj", "pabna"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82"],
         Seed_sowing_first_date: 30,
         Seed_sowing_first_month: 3,
@@ -246,7 +246,7 @@ export const data = [
 
     {
         id: 9,
-        area: ["rajshahi", "nouga", "capai_nobabgonj", "natore"],
+        area: ["rajshahi", "naogaon", "chapainawabganj", "natore"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82"],
         Seed_sowing_first_date: 30,
         Seed_sowing_first_month: 3,
