@@ -124,11 +124,6 @@ tbody td:hover:before {
     padding: 2%;
 }
 
-.result{
-    display: flex;
-    justify-content: center;
-}
-
 .result ul li{
     line-height:280%;
     list-style: none;

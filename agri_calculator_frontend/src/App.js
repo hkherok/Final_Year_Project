@@ -11,6 +11,7 @@ import Desease from "./component/desease/Desease";
 import Attention from "./component/Attention/Attention";
 import Dashboard from "./component/user/dashboard/Dashboard";
 import Calculation from "./component/calculation/Calculation"
+import ErrorPage from "./component/ErrorPage";
 
 function App() {
   return (
@@ -18,7 +19,6 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" exact element={<Home />} />
           <Route path="/profile" exact element={<Profile />} />
           <Route path="/Dashboard" exact element={<Dashboard />} />
           <Route path="/signin" exact element={<Signin />} />
@@ -28,6 +28,8 @@ function App() {
           <Route path="/desease" exact element={<Desease />} />
           <Route path="/attention" exact element={<Attention />} />
           <Route path="/calculation" exact element={<Calculation />} />
+          <Route path="/" exact element={<Home />} />
+          <Route path="*" exact element={<ErrorPage />} />
         </Routes>
         <Footer />
       </Router>
