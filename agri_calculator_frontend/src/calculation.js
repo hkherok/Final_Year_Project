@@ -1,5 +1,4 @@
 export class Seed{
-    id;
     area = new Array();
     Paddy_variant = new Array();
     Seed_sowing_first_date;
@@ -25,7 +24,6 @@ export class Seed{
 
 export const data = [
     {
-        id: 1,
         area: ["sylhet", "habiganj", "sunamganj", "moulvibazar"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-55", "Bri-82"],
         Seed_sowing_first_date: 30,
@@ -51,7 +49,6 @@ export const data = [
 
 
     {
-        id: 2,
         area: ["dhaka", "ghazipur", "narayanganj", "manikganj", "narsingdi", "tangail", "munshiganj", "kishoreganj"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82", "Bri-85"],
         Seed_sowing_first_date: 25,
@@ -78,8 +75,7 @@ export const data = [
 
 
     {
-        id: 3,
-        area: ["cummila", "chandpur", "Brahmanbaria"],
+        area: ["cumilla", "chandpur", "brahmanbaria"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82", "Bri-85"],
         Seed_sowing_first_date: 10,
         Seed_sowing_first_month: 3,
@@ -107,7 +103,6 @@ export const data = [
 
 
     {
-        id: 4,
         area: ["mymensingh", "jamalpur", "netrokona", "serpur"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-55", "Bri-82"],
         Seed_sowing_first_date: 30,
@@ -137,7 +132,6 @@ export const data = [
 
 
     {
-        id: 5,
         area: ["chittagong", "cox's_bazar", "noakhali", "lakshmipur"],
         Paddy_variant: ["Bri-26", "Bri-48", "Bri-55", "Bri-82", "Bri-85"],
         Seed_sowing_first_date: 25,
@@ -163,7 +157,6 @@ export const data = [
 
 
     {
-        id: 6,
         area: ["rangpur", "gaibandha", "lalmonirhat", "kurigram", "nilphamari"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82"],
         Seed_sowing_first_date: 30,
@@ -188,7 +181,6 @@ export const data = [
     },
 
     {
-        id: 7,
         area: ["dinajpur", "panchagarh", "thakurgaon"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82"],
         Seed_sowing_first_date: 30,
@@ -216,8 +208,7 @@ export const data = [
 
 
     {
-        id: 8,
-        area: ["bogra", "joypurhat", "sirajganj", "pabna"],
+        area: ["bogura", "joypurhat", "sirajganj", "pabna"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82"],
         Seed_sowing_first_date: 30,
         Seed_sowing_first_month: 3,
@@ -245,7 +236,6 @@ export const data = [
 
 
     {
-        id: 9,
         area: ["rajshahi", "nouga", "capai_nobabgonj", "natore"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82"],
         Seed_sowing_first_date: 30,
@@ -269,7 +259,6 @@ export const data = [
         zinc: 0.7
     },
     {
-        id: 10,
         area: ["faridpur", "rajbari", "gopalganj", "shariatpur", "madaripur"],
         Paddy_variant: ["Br-26", "Bri-27", "Bri-48", "Bri-82", "Bri-85"],
         Seed_sowing_first_date: 30,
@@ -295,7 +284,6 @@ export const data = [
 
 
     {
-        id: 11,
         area: ["jessore", "jhenaidah", "magura", "kushtia", "chuadanga"],
         Paddy_variant: ["Br-26", "Bri-48", "Bri-82"],
         Seed_sowing_first_date: 30,
@@ -322,7 +310,6 @@ export const data = [
 
 
     {
-        id: 12,
         area: ["khulna", "bagerhat", "satkhira", "narail"],
         Paddy_variant: ["Br-26", "Bri-27", "Bri-48", "Bri-55", "Bri-82"],
         Seed_sowing_first_date: 30,
@@ -345,7 +332,4 @@ export const data = [
         gipsam: 5,
         zinc: 0.7
     }
-
-
-
 ]

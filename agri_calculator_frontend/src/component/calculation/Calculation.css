@@ -1,0 +1,135 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+	text-align: left;
+}
+
+thead th {
+		background-color: #55608f;
+	}
+
+tbody tr:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+tbody td {
+		position: relative;
+}
+tbody td:hover:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+}
+
+.calc_form > .form{
+    height: 40%;
+    margin: 5%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.calc_form > .form > form{
+    text-align: center;
+}
+
+.form label {
+    color: white;
+    font-size: 20px;
+}
+
+.form button {
+    margin-top: 50px;
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.form button:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.form button:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.district{
+    display: flex;
+    justify-content: space-between;
+}
+
+.district > select{
+    height: auto;
+    padding: 2%;
+    color: brown;
+    border: none;
+    border-radius: 5%;
+}
+
+.quantity_land{
+    margin-top: 20px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-radius: 10%;
+}
+
+.quantity_land > input{
+    width: 170px;
+    padding: 2%;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+}
+
+.result ul li{
+    line-height:280%;
+    list-style: none;
+}
