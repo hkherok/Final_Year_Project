@@ -8,8 +8,8 @@ const Footer = () => {
           <div class="container">
             <div class="row">
               <div class="col-lg-3 col-md-6 footer-contact">
-                <h3>
-                  Agri Calculator<span>.</span>
+                <h3 className="primary">
+                <span>  Agri Calculator.</span>
                 </h3>
                 <p>
                   Team Of Agri Calculator<br />

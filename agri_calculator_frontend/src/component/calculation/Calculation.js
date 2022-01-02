@@ -23,7 +23,7 @@ export default function Calculation() {
 
         setTimeout(() => {
             setSubmitting(false);
-        }, 20000);
+        }, 200000);
     }
 
     const handleChange = event => {
@@ -55,7 +55,7 @@ export default function Calculation() {
                                     <option value="chandpur">
                                         চাঁদপুর
                                     </option>
-                                    <option value="Lakshmipur">
+                                    <option value="lakshmipur">
                                         লক্ষ্মীপুর
                                     </option>
                                     <option value="chittagong">
@@ -281,7 +281,7 @@ export default function Calculation() {
                                 </table>
                                 <div style={{ color: 'white' }} className='mt-5'>
                                     <p>
-                                        রোপা আউশে শেষ চাষের সময় ১/৩ ভাগ ইউরিয়া ও অন্যান্য সকল সার শেষ চাষের সময় প্রয়োগ করতে হবে, ২য় কিস্তি ইউরিয়া (১/৩ ভাগ) ৪-৫ টি কুশি দেখা দিলে (সাধারণ রোপনের ১৫-১৮ দিন পর) এবং ৩য় কিস্তি (১/৩ ভাগ) ইউরিয়া কাইচথোড় আসার ৫-৭ দিন পূর্বে প্রয়োগ করতে হবে । অন্যদিকে বোনা আউশের ক্ষেত্রে টিএসপি, এমওপি, জিপসাম ও জিংক শেষ চাষের সময় প্র্যোগ করতে হবে। ইউরিয়া সমান ২ কিস্তিতে প্রয়োগ করলে গাছের বাড়-বাড়তি ভাল হয় ও ফলন বৃদ্ধি পায় । ১ম কিস্তি শেষ চাষের সময় ও ২য় কিস্তি ধান বপনের ৩০-৪০ দিন পর প্রয়োগ করতে হয় ।
+                                        চাষের সময় ১/৩ ভাগ ইউরিয়া ও অন্যান্য সকল সার শেষ চাষের সময় প্রয়োগ করতে হবে, ২য় কিস্তি ইউরিয়া (১/৩ ভাগ) ৪-৫ টি কুশি দেখা দিলে (সাধারণ রোপনের ১৫-১৮ দিন পর) এবং ৩য় কিস্তি (১/৩ ভাগ) ইউরিয়া কাইচথোড় আসার ৫-৭ দিন পূর্বে প্রয়োগ করতে হবে । অন্যদিকে বোনা আউশের ক্ষেত্রে টিএসপি, এমওপি, জিপসাম ও জিংক শেষ চাষের সময় প্র্যোগ করতে হবে। ইউরিয়া সমান ২ কিস্তিতে প্রয়োগ করলে গাছের বাড়-বাড়তি ভাল হয় ও ফলন বৃদ্ধি পায় । ১ম কিস্তি শেষ চাষের সময় ও ২য় কিস্তি ধান বপনের ৩০-৪০ দিন পর প্রয়োগ করতে হয় ।
                                     </p>
                                     <p>
                                         <b style={{ fontWeight: '600', fontSize: '20px' }}>আগাছা দমনঃ</b> সাধারণত হাত দিয়ে, নিড়ানী যন্ত্রের সাহায্যে অথবা আগাছানাশক ব্যবহারের মাধ্যমে ৩০-৩৫ দিন পর্যন্ত আগাছামুক্ত রাখতে হবে । রোপা আউশ ধানের জন্য প্রি ইমারজেন্স আগাছানাশক হিসাবে বেনসালফিউরান মিথাইল+এসিটাক্লোর, মেফেনেসেট+বেন্সালফিউরান মিথাইল ইত্যাদি গ্রুপের আগাছানাশক রোপ্নের ৩ দিনের মধ্যে প্রয়োগ করতে হবে।
@@ -350,9 +350,9 @@ function Calculator(district, land, crop) {
     finalProcess[4][0] = "চারা রোপণ"; finalProcess[4][1] = seed['first_date'].toString() + ', ' + month[seed['first_month']] + " - " + seed['last_date'].toString() + ', ' + month[seed['last_month']];
     finalProcess[5][0] = "রোপণ দূরত্ব"; finalProcess[5][1] = seed['first_length'].toString() + ' ইঞ্চি X ' + seed['last_length'] + ' ইঞ্চি';
     finalProcess[6][0] = "চারার সংখ্যা"; finalProcess[6][1] = 'প্রতি গোছায় ' + seed['seed_count'] + 'টি';
-    finalProcess[7][0] = "ইউরিয়া"; finalProcess[7][1] = seed['urea'];
-    finalProcess[8][0] = "টিএসপি"; finalProcess[8][1] = seed['tsp'];
-    finalProcess[9][0] = "এমওপি"; finalProcess[9][1] = seed['mop'];
-    finalProcess[10][0] = "জিপসাম"; finalProcess[10][1] = seed['gipsam'];
-    finalProcess[11][0] = "দস্তা (জিংক সালফেট)"; finalProcess[11][1] = seed['zinc'];
+    finalProcess[7][0] = "ইউরিয়া"; finalProcess[7][1] = seed['urea'] + ' কেজি';
+    finalProcess[8][0] = "টিএসপি"; finalProcess[8][1] = seed['tsp'] + ' কেজি';
+    finalProcess[9][0] = "এমওপি"; finalProcess[9][1] = seed['mop'] + ' কেজি';
+    finalProcess[10][0] = "জিপসাম"; finalProcess[10][1] = seed['gipsam'] + ' কেজি';
+    finalProcess[11][0] = "দস্তা (জিংক সালফেট)"; finalProcess[11][1] = seed['zinc'] + ' কেজি';
 }

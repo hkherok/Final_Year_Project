@@ -129,7 +129,7 @@ export const data = [
 
 
     {
-        area: ["chittagong", "cox's_bazar", "noakhali", "lakshmipur"],
+        area: ["chittagong", "cox's_bazar", "noakhali", "lakshmipur", "feni"],
         Paddy_variant: ["Bri-26", "Bri-48", "Bri-55", "Bri-82", "Bri-85"],
         Seed_sowing_first_date: "৩০",
         Seed_sowing_first_month: 3,

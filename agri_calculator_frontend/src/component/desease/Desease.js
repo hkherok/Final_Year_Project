@@ -3,6 +3,7 @@ import axios from "axios";
 import Navabar from "../Navbar/Navbar";
 
 import "./Desease.css";
+//hook
 const Desease = () => {
   const [APIData, setAPIData] = useState([]);
   useEffect(() => {

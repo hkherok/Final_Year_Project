@@ -4,6 +4,8 @@ import { Table, Button } from "semantic-ui-react";
 import axios from "axios";
 
 function Profile() {
+
+  //use state -hook
   const [APIData, setAPIData] = useState([]);
 
   const setData = (data) => {
