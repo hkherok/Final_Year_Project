@@ -3,7 +3,7 @@ body {
 	height: 100%;
 }
 
-body {
+.calc_form {
 	margin: 0;
 	background: linear-gradient(45deg, #49a09d, #5f2c82);
 	font-family: sans-serif;

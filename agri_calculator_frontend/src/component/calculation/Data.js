@@ -1,3 +1,15 @@
+export class Calc{
+        id;
+        user_name;
+        user_land;
+        urea;
+        tsp;
+        mop;
+        gipsam;
+        zinc;
+        user;
+}
+
 export class Seed{
     area = new Array();
     Paddy_variant = new Array();

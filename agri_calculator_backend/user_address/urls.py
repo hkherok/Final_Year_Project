@@ -9,8 +9,8 @@ urlpatterns = [
     path('district/<int:pk>/', views.DistrictDetail.as_view()),
     path('upazila/', views.UpazilaList.as_view()),
     path('upazila/<int:pk>/', views.UpazilaDetail.as_view()),
-    path('', views.AddressList.as_view()),
     path('<int:pk>/', views.AddressDetail.as_view()),
+    path('', views.AddressList.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

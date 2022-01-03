@@ -3,10 +3,12 @@ import axios from "axios";
 import Navabar from "../Navbar/Navbar";
 
 import "./Desease.css";
+import { coreAxios } from "../../utils/axios";
 const Desease = () => {
   const [APIData, setAPIData] = useState([]);
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/desease/`).then((response) => {
+    coreAxios
+    .get(`http://127.0.0.1:8000/api/desease/`).then((response) => {
       setAPIData(response.data);
     });
   }, []);
@@ -14,7 +16,7 @@ const Desease = () => {
     <div>
       <div className="container">
         <div class="container bootstrap snipets">
-          <h1 class="text-center text-muted">Disease </h1>
+          <h1 class="text-center text-muted">Disease</h1>
           <div class="row flow-offset-2">
             {APIData.map((data) => {
               return (

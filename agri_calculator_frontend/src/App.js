@@ -12,6 +12,7 @@ import Attention from "./component/Attention/Attention";
 import Dashboard from "./component/user/dashboard/Dashboard";
 import Calculation from "./component/calculation/Calculation"
 import ErrorPage from "./component/ErrorPage";
+import History from "./component/history/History";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/signup" exact element={<Signup />} />
           <Route path="/blog" exact element={<Blog />} />
           <Route path="/contact" exact element={<Contact />} />
+          <Route path="/history" exact element={<History />} />
           <Route path="/desease" exact element={<Desease />} />
           <Route path="/attention" exact element={<Attention />} />
           <Route path="/calculation" exact element={<Calculation />} />

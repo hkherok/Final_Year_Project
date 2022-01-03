@@ -1,20 +1,28 @@
-from user_profile.models import Profile
-from user_profile.serializers import ProfileSerializer
-from django.http import Http404
+from rest_framework import filters
 from rest_framework.views import APIView
+from user_profile.models import Profile
+from user_profile.serializers import ProfileSerializer, RegisterSerializer
+from rest_framework.permissions import IsAuthenticated
+from rest_framework import generics, permissions, mixins
 from rest_framework.response import Response
+from django_filters.rest_framework import DjangoFilterBackend
+from django.http import Http404
 from rest_framework import status
 
-#---------------Profile API---------------#
-class ProfileList(APIView):
-    """
-    List all snippets, or create a new snippet.
-    """
-    def get(self, request, format=None):
-        profiles = Profile.objects.all()
-        serializer = ProfileSerializer(profiles, many=True)
-        return Response(serializer.data)
+class ProfileList(generics.ListCreateAPIView):
+    queryset = Profile.objects.all()
+    serializer_class = ProfileSerializer
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['username', 'email']
+    permission_classes = [IsAuthenticated]
 
+class ProfileDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Profile.objects.all()
+    serializer_class = ProfileSerializer
+    permission_classes = [IsAuthenticated]
+
+#Register API
+class UserPost(APIView):
     def post(self, request, format=None):
         serializer = ProfileSerializer(data=request.data)
         if serializer.is_valid():
@@ -22,32 +30,14 @@ class ProfileList(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-class ProfileDetail(APIView):
-    """
-    Retrieve, update or delete a snippet instance.
-    """
-    def get_object(self, pk):
-        try:
-            return Profile.objects.get(pk=pk)
-        except Profile.DoesNotExist:
-            raise Http404
-
-    def get(self, request, pk, format=None):
-        profile = self.get_object(pk)
-        serializer = ProfileSerializer(profile)
-        return Response(serializer.data)
-
-    def put(self, request, pk, format=None):
-        profile = self.get_object(pk)
-        serializer = ProfileSerializer(profile, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-    def delete(self, request, pk, format=None):
-        profile = self.get_object(pk)
-        profile.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
-
-#-----------------End Profile---------------#
+class RegisterApi(generics.GenericAPIView):
+    serializer_class = RegisterSerializer
+    def post(self, request, *args,  **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+        UserPost.post(user, request)
+        return Response({
+            "profile": ProfileSerializer(user, context=self.get_serializer_context()).data,
+            "message": "User Created Successfully.  Now perform Login to get your token",
+        })
