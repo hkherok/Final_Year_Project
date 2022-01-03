@@ -11,6 +11,8 @@ const formReducer = (state, event) => {
 }
 
 function Profile() {
+
+  //use state -hook
   const [APIData, setAPIData] = useState([]);
   const [formData, setFormData] = useReducer(formReducer, {});
 

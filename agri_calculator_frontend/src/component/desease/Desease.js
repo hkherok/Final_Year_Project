@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navabar from "../Navbar/Navbar";
-
 import "./Desease.css";
 import { coreAxios } from "../../utils/axios";
+
 const Desease = () => {
   const [APIData, setAPIData] = useState([]);
   useEffect(() => {
