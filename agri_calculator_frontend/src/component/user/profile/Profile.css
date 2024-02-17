@@ -1,5 +1,10 @@
-body {
-  background: #f9f9fb;
+.profile {
+
+	margin: 0;
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	font-family: sans-serif;
+	font-weight: 100;
+
 }
 .view-account {
   background: #ffffff;

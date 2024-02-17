@@ -64,7 +64,9 @@ const Navbar = () => {
               <li>
                 <Link to="/dashboard">Agri Calculator</Link>
               </li>
-
+              <li>
+                <Link to="/weather">Weather</Link>
+              </li>
               <li>
                 <a class="nav-link scrollto ">
                   <Link to="/desease">Disease</Link>
@@ -91,18 +93,32 @@ const Navbar = () => {
               </li>
               <li class="dropdown">
                 <a href="#">
-                  <span>{User ? User.full_name : "User"}</span> <i class="bi bi-chevron-down"></i>
-                  <img style={{width: '50px', border: '0', borderRadius: '50%'}} src={User? User.photo : "https://static.vecteezy.com/system/resources/previews/002/275/847/original/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg"} />
+                  <span>{User ? User.full_name : "User"}</span>{" "}
+                  <i class="bi bi-chevron-down"></i>
+                  <img
+                    style={{ width: "50px", border: "0", borderRadius: "50%" }}
+                    src={
+                      User
+                        ? User.photo
+                        : "https://static.vecteezy.com/system/resources/previews/002/275/847/original/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg"
+                    }
+                  />
                 </a>
                 <ul>
                   <li>
-                    <span><Link to="/profile">Profile</Link></span>
+                    <span>
+                      <Link to="/profile">Profile</Link>
+                    </span>
                   </li>
                   <li>
                     <a href="#">Settings</a>
                   </li>
                   <li>
-                  <span><Link to="/signin" onClick={logout}>Logout</Link></span>
+                    <span>
+                      <Link to="/signin" onClick={logout}>
+                        Logout
+                      </Link>
+                    </span>
                   </li>
                 </ul>
               </li>
@@ -112,6 +128,6 @@ const Navbar = () => {
         </div>
       </header>
     </div>
-  );
+  )
 };
 export default Navbar;

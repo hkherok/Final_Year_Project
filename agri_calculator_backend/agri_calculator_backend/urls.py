@@ -17,7 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 from user_profile.views import RegisterApi
 from rest_framework_simplejwt import views as jwt_views
-
+from django.conf import settings
+from django.conf.urls.static import static
+from django.conf.urls.static import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     #path('admin/main', include('admin_main.urls')),
     path('api/user/address/', include('user_address.urls')),
@@ -28,7 +31,8 @@ urlpatterns = [
     path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
     path('api/register/', RegisterApi.as_view()),
-    path('', admin.site.urls),
+    path('/admin', admin.site.urls),
     #path('admin/', admin.site.urls),
     #path('user/', include('user.urls')),
-]
+] 
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

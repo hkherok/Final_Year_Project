@@ -1,18 +1,21 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./component/home/Home";
-import Navbar from "./component/Navbar/Navbar";
-import Footer from "./component/Footer/Footer";
-import Profile from "./component/user/profile/Profile";
-import Signin from "./component/signin/Signin";
-import Signup from "./component/signup/Signup";
-import Blog from "./component/blog/Blog";
-import Contact from "./component/contact/Contact";
-import Desease from "./component/desease/Desease";
-import Attention from "./component/Attention/Attention";
-import Dashboard from "./component/user/dashboard/Dashboard";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Home from "./component/home/Home"
+import Navbar from "./component/Navbar/Navbar"
+import Footer from "./component/Footer/Footer"
+import Profile from "./component/user/profile/Profile"
+import Signin from "./component/signin/Signin"
+import Signup from "./component/signup/Signup"
+import Blog from "./component/blog/Blog"
+import Contact from "./component/contact/Contact"
+import Desease from "./component/desease/Desease"
+import Attention from "./component/Attention/Attention"
+import Dashboard from "./component/user/dashboard/Dashboard"
 import Calculation from "./component/calculation/Calculation"
-import ErrorPage from "./component/ErrorPage";
-import History from "./component/history/History";
+import ErrorPage from "./component/ErrorPage"
+import History from "./component/history/History"
+import Weather from "./component/weather/Weather"
+
+
 
 function App() {
   return (
@@ -28,6 +31,7 @@ function App() {
           <Route path="/contact" exact element={<Contact />} />
           <Route path="/history" exact element={<History />} />
           <Route path="/desease" exact element={<Desease />} />
+          <Route path="/weather" exact element={<Weather />} />
           <Route path="/attention" exact element={<Attention />} />
           <Route path="/calculation" exact element={<Calculation />} />
           <Route path="/" exact element={<Home />} />
@@ -36,7 +40,7 @@ function App() {
         <Footer />
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

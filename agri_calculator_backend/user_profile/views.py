@@ -8,7 +8,8 @@ from rest_framework.response import Response
 from django_filters.rest_framework import DjangoFilterBackend
 from django.http import Http404
 from rest_framework import status
-
+import requests
+import base64
 class ProfileList(generics.ListCreateAPIView):
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializer
@@ -16,6 +17,8 @@ class ProfileList(generics.ListCreateAPIView):
     search_fields = ['username', 'email']
     permission_classes = [IsAuthenticated]
 
+    def perform_create(self, serializer):
+            serializer.save(photo=self.request.data.get('photo'))
 class ProfileDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializer
